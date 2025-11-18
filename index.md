@@ -1,9 +1,9 @@
 ---
 ---
 
-# Seifert-THzNano-Lab's Website
+# Seifert THzNanoDynamics Lab's Website
 
-An engaging 1-3 sentence description of your lab.
+We explore the ultrafast dynamics of spins and magnetism, harnessing terahertz fields to control quantum magnets at the nanoscale. Our research pushes the boundaries of spin‑orbitronics, turning femtosecond and nanometer phenomena into future applications.
 
 {% include section.html %}
 
@@ -11,7 +11,7 @@ An engaging 1-3 sentence description of your lab.
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We develop and use novel approaches for terahertz time-doamain spectroscopy capable of combing femtosecond temporal and nanometer spatial resolutions - key to explore ultrafast dynamics in complex nanomaterials on the spatiotemporal scales relevant for applications and fundamental insights.
 
 {%
   include button.html
@@ -34,7 +34,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We focus on magnetic materials and aim at gaining control over the ultrafast dynamics of the order parameter on nanoscales. Promising research directions include terahertz dynamics in multiferroics or 2D materials.   
 
 {%
   include button.html
@@ -59,7 +59,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our international team includes researcher at a variety of academic stages, ranging from master students, via PhD candidates to postdoctoral researchers.
 
 {%
   include button.html
