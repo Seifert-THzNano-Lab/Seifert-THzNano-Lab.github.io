@@ -98,5 +98,8 @@
                 <!-- SVG LOGO END -->
 
             </div>
-
+svg{
+max-width: 40vw;
+max-height:40vh;
+}
          
