@@ -1,7 +1,7 @@
 ---
 ---
 
-# Seifert THzNanoDynamics Lab's Website
+# Seifert Lab's Website
 
 We explore the ultrafast dynamics of spins and magnetism, harnessing terahertz fields to control quantum magnets at the nanoscale. Our research pushes the boundaries of spin‑orbitronics, turning femtosecond and nanometer phenomena into future applications.
 
