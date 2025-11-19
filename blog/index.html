@@ -384,104 +384,74 @@
     
       <span class="logo">
         
-          
+          <svg class="w-64 h-64" viewbox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
 
+    <defs>
+        <!-- Gradient -->
+        <lineargradient id="structGrad" x1="0" y1="0" x2="200" y2="200" gradientunits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#334155"></stop>
+            <stop offset="100%" stop-color="#64748B"></stop>
+        </lineargradient>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seifert THz-Nano Lab - Modern Concept</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* 1. The Wave Flow Animation */
-        /* Moves a dash pattern along the path to simulate energy flow */
-        @keyframes energyFlow {
-            to {
-                stroke-dashoffset: -200;
+        <!-- Animations -->
+        <style>
+            @keyframes energyFlow {
+                to { stroke-dashoffset: -200; }
             }
-        }
+            @keyframes atomBreathe {
+                0%,100% { r: 3.5; opacity: .8; }
+                50%     { r: 5; opacity: 1; }
+            }
+            @keyframes pulseGlow {
+                0%,100% { filter: drop-shadow(0 0 2px rgba(239,68,68,.5)); }
+                50%     { filter: drop-shadow(0 0 6px rgba(239,68,68,.8)); }
+            }
 
-        /* 2. Atom Breathing Animation */
-        /* Subtle pulsing of the nano-nodes */
-        @keyframes atomBreathe {
-            0%, 100% { r: 3.5; opacity: 0.8; }
-            50% { r: 5; opacity: 1; }
-        }
+            .wave-flow {
+                stroke-dasharray: 100 100;
+                animation:
+                    energyFlow 3s linear infinite,
+                    pulseGlow 3s ease-in-out infinite;
+            }
+            .atom-node {
+                animation: atomBreathe 4s ease-in-out infinite;
+                transform-box: fill-box;
+                transform-origin: center;
+            }
 
-        /* 3. Pulse Glow */
-        /* Makes the red wave glow intensity fluctuate slightly */
-        @keyframes pulseGlow {
-            0%, 100% { filter: drop-shadow(0 0 2px rgba(239, 68, 68, 0.5)); }
-            50% { filter: drop-shadow(0 0 6px rgba(239, 68, 68, 0.8)); }
-        }
+            .a1 { animation-delay: 0s; }
+            .a2 { animation-delay: 1s; }
+            .a3 { animation-delay: 2s; }
+        </style>
+    </defs>
 
-        .wave-flow {
-            stroke-dasharray: 100 100; /* Visible dash, gap */
-            animation: energyFlow 3s linear infinite, pulseGlow 3s ease-in-out infinite;
-        }
+    <!-- Nanostructure -->
+    <g stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 60 L100 30 L150 60"></path>
+        <path d="M50 140 L100 170 L150 140"></path>
+        <line x1="50" y1="60" x2="50" y2="85"></line>
+        <line x1="150" y1="60" x2="150" y2="85"></line>
+        <line x1="50" y1="115" x2="50" y2="140"></line>
+        <line x1="150" y1="115" x2="150" y2="140"></line>
+    </g>
 
-        .atom-node {
-            animation: atomBreathe 4s ease-in-out infinite;
-            transform-box: fill-box;
-            transform-origin: center;
-        }
-        
-        /* Stagger the breathing for a dynamic organic feel */
-        .atom-1 { animation-delay: 0s; }
-        .atom-2 { animation-delay: 1s; }
-        .atom-3 { animation-delay: 2s; }
+    <!-- Atomic Nodes -->
+    <g fill="white">
+        <circle cx="50" cy="60" r="3.5" class="atom-node a1"></circle>
+        <circle cx="100" cy="30" r="3.5" class="atom-node a2"></circle>
+        <circle cx="150" cy="60" r="3.5" class="atom-node a3"></circle>
 
-    </style>
+        <circle cx="50" cy="140" r="3.5" class="atom-node a1"></circle>
+        <circle cx="100" cy="170" r="3.5" class="atom-node a2"></circle>
+        <circle cx="150" cy="140" r="3.5" class="atom-node a3"></circle>
+    </g>
 
+    <!-- Background Wave -->
+    <path d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"></path>
 
-
-
-                <!-- SVG LOGO START -->
-                <svg class="w-64 h-64" viewbox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <!-- Gradient for the structure -->
-                        <lineargradient id="structGrad" x1="0" y1="0" x2="200" y2="200" gradientunits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#334155"></stop> <!-- Slate 700 -->
-                            <stop offset="100%" stop-color="#64748B"></stop> <!-- Slate 500 -->
-                        </lineargradient>
-                    </defs>
-
-                    <!-- 1. Nanostructure (Split Hexagon) -->
-                    <!-- Top Half -->
-                    <path d="M50 60 L100 30 L150 60" stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <!-- Bottom Half -->
-                    <path d="M50 140 L100 170 L150 140" stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
-                    
-                    <!-- Vertical Connectors (Partial) -->
-                    <line x1="50" y1="60" x2="50" y2="85" stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round"></line>
-                    <line x1="150" y1="60" x2="150" y2="85" stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round"></line>
-                    <line x1="50" y1="115" x2="50" y2="140" stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round"></line>
-                    <line x1="150" y1="115" x2="150" y2="140" stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round"></line>
-
-                    <!-- Atomic Nodes (The "Nano" Dots) -->
-                    <!-- Top Nodes -->
-                    <circle cx="50" cy="60" r="3.5" fill="white" class="atom-node atom-1"></circle>
-                    <circle cx="100" cy="30" r="3.5" fill="white" class="atom-node atom-2"></circle>
-                    <circle cx="150" cy="60" r="3.5" fill="white" class="atom-node atom-3"></circle>
-                    <!-- Bottom Nodes -->
-                    <circle cx="50" cy="140" r="3.5" fill="white" class="atom-node atom-1"></circle>
-                    <circle cx="100" cy="170" r="3.5" fill="white" class="atom-node atom-2"></circle>
-                    <circle cx="150" cy="140" r="3.5" fill="white" class="atom-node atom-3"></circle>
-
-                    <!-- 2. The THz Wave (The "Interaction") -->
-                    <!-- Background Track (Faint) -->
-                    <path d="M 20 100 Q 60 100 70 80 T 100 100 T 130 120 T 180 100" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"></path>
-                    
-                    <!-- Active Pulse (Animated) -->
-                    <path class="wave-flow" d="M 20 100 Q 60 100 70 80 T 100 100 T 130 120 T 180 100" stroke="#EF4444" stroke-width="5" stroke-linecap="round" fill="none"></path>
-                </svg>
-                <!-- SVG LOGO END -->
-
-            
-svg{
-max-width: 40vw;
-max-height:40vh;
-}
-         
+    <!-- Animated Wave -->
+    <path class="wave-flow" d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" stroke="#EF4444" stroke-width="5" stroke-linecap="round" fill="none"></path>
+</svg>
 
         
       </span>
@@ -1013,7 +983,5 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
-  
-
-</body>
+  </body>
 </html>
