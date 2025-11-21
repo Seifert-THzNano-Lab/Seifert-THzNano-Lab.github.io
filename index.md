@@ -1,7 +1,7 @@
 ---
 ---
 
-# Seifert Lab's Website
+# Our research vision
 
 We explore the ultrafast dynamics of spins and magnetism, harnessing terahertz fields to control quantum magnets at the nanoscale. Our research pushes the boundaries of spin‑orbitronics, turning femtosecond and nanometer phenomena into future applications.
 
@@ -11,7 +11,7 @@ We explore the ultrafast dynamics of spins and magnetism, harnessing terahertz f
 
 {% capture text %}
 
-We develop and use novel approaches for terahertz time-doamain spectroscopy capable of combing femtosecond temporal and nanometer spatial resolutions - key to explore ultrafast dynamics in complex nanomaterials on the spatiotemporal scales relevant for applications and fundamental insights.
+We develop and use novel approaches for terahertz time-domain spectroscopy capable of combing femtosecond temporal and nanometer spatial resolutions. These steps are key to explore ultrafast dynamics in complex nanomaterials on the spatiotemporal scales relevant for applications and fundamental insights.
 
 {%
   include button.html
