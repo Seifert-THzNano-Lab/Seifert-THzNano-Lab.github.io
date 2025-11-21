@@ -26,7 +26,7 @@ We develop and use novel approaches for terahertz time-domain spectroscopy capab
 
 {%
   include feature.html
-  image="images/NATS_scheme.jpg"
+  image="images/NATS_scheme.svg"
   link="research"
   title="Our Research"
   text=text
