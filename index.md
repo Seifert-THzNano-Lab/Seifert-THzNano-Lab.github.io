@@ -26,7 +26,7 @@ We develop and use novel approaches for terahertz time-doamain spectroscopy capa
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/NATS_scheme.jpg"
   link="research"
   title="Our Research"
   text=text
