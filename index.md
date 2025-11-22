@@ -74,7 +74,7 @@ Our international team includes researcher at a variety of academic stages, rang
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/groupphoto.jpeg"
   link="team"
   title="Our Team"
   text=text
