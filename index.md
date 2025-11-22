@@ -49,7 +49,7 @@ We focus on magnetic materials and aim at gaining control over the ultrafast dyn
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/projects.jpg"
   link="projects"
   title="Our Projects"
   flip=true
