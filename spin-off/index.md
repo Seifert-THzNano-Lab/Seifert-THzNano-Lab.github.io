@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Spin-off
 
-Parts of our fundamental research is implemented into next generation terahrtz technology. A prominent example are terahertz emitters based on spintronic principles. These items are developed and commercialized by our start-up company TeraSpinTec.
+We always aim at implementing our fundamental research into next generation terahrtz technology. A prominent example are terahertz emitters based on spintronic principles. These items are developed and commercialized by our start-up company TeraSpinTec.
 TeraSpinTEc was founded in 2021 by Tobias Kampfrath and Tom S. Seifert, who currently runs the company as CEO.
 For more information visit 
 
