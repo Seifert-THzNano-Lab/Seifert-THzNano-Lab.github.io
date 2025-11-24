@@ -23,8 +23,7 @@ If you want to join our team or have any questions, please get in touch with us.
   link="https://www.google.com/maps/place/Arnimallee+14,+14195+Berlin/@52.4555995,13.2929973,17z/data=!3m1!4b1!4m6!3m5!1s0x47a85a6f98eec30b:0x8e6acbdbfd7f90b2!8m2!3d52.4555963!4d13.2955776!16s%2Fg%2F12hnx46mm?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
 %}
 
-<! --
-{% include section.html %}
+<!--{% include section.html %}
 
 {% capture col1 %}
 
@@ -68,5 +67,4 @@ consectetur adipiscing elit
 sed do eiusmod tempor
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
--->
+{% include cols.html col1=col1 col2=col2 col3=col3 %}-->
