@@ -13,7 +13,7 @@ For more information visit
 
 {%
   include feature.html
-  image="images/NATS_scheme.jpg"
+  image="images/NATS_scheme.svg"
   link="https://teraspintec.com"
   title="TeraSpinTec"
   text="Next generation terahertz technology based on spintronics"
