@@ -21,19 +21,19 @@ For more information visit
 %}
 
 
-<!-- (../projects/index.md){% include tags.html tags="publication, resource, website" %}
+<!-- (../projects/index.md){% include tags.html tags="publication, resource, website" %}-->
 
-{% include search-info.html %}
+<!--{% include search-info.html %}-->
 
-{% include section.html %}
+<!--{% include section.html %}-->
 
-## Featured
+<!--## Featured-->
 
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
+<!--{% include list.html component="card" data="projects" filter="group == 'featured'" %}-->
 
-{% include section.html %}
+<!--{% include section.html %}-->
 
-## More
+<!--## More-->
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %} -->
+<!--{% include list.html component="card" data="projects" filter="!group" style="small" %} -->
 
