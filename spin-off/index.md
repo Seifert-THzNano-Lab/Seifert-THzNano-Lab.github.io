@@ -20,8 +20,8 @@ For more information visit
   flip=true
 %}
 
-<!--
-(../projects/index.md){% include tags.html tags="publication, resource, website" %}
+
+<! -- (../projects/index.md){% include tags.html tags="publication, resource, website" %}
 
 {% include search-info.html %}
 
@@ -35,5 +35,5 @@ For more information visit
 
 ## More
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
--->
+{% include list.html component="card" data="projects" filter="!group" style="small" %} -->
+
