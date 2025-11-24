@@ -21,7 +21,7 @@ For more information visit
 %}
 
 
-<! -- (../projects/index.md){% include tags.html tags="publication, resource, website" %}
+<!-- (../projects/index.md){% include tags.html tags="publication, resource, website" %}
 
 {% include search-info.html %}
 
