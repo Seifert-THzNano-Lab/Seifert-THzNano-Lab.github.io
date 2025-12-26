@@ -1,1 +1,1 @@
-Sitemap: https://seifert-thznano-lab.github.io/sitemap.xml
+Sitemap: http://www.seifert-lab.com/sitemap.xml
