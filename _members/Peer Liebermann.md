@@ -1,6 +1,6 @@
 ---
 name: Peer Liebermann
-image: images/people_liebermann.jpg
+image: images/People_liebermann.jpg
 role: undergrad
 group: alum
 links:

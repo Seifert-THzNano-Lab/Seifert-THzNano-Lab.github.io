@@ -1,6 +1,6 @@
 ---
 name: Reza Rouzegar
-image: images/people_rouzegar.jpg
+image: images/People_rouzegar.jpg
 role: postdoc
 group: alum
 links:

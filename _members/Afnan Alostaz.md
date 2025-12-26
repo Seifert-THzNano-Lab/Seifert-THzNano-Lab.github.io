@@ -1,6 +1,6 @@
 ---
 name: Afnan Alostaz
-image: images/people_alostaz.jpg
+image: images/People_alostaz.jpg
 role: phd
 group: alum
 links:
