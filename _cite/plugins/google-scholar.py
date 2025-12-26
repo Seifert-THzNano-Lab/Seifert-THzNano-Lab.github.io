@@ -33,6 +33,17 @@ def extract_year_safe(text):
         return match.group(0)
     return ""
 
+def is_valid_journal(name):
+    """
+    Returns True if the name looks like a real journal (not empty, not just 'arXiv').
+    """
+    if not name: return False
+    lower_name = name.lower()
+    if "arxiv" in lower_name: return False
+    if "biorxiv" in lower_name: return False
+    if "chemrxiv" in lower_name: return False
+    return True
+
 def search_arxiv_by_title(title):
     if not title or len(title) < 5: return None
     clean_query = re.sub(r'[^a-zA-Z0-9\s]', '', title)
@@ -64,7 +75,7 @@ def search_arxiv_by_title(title):
                 doi_tag = entry.find('arxiv:doi', ns)
                 if doi_tag is not None: doi = doi_tag.text
 
-                journal_ref = "arXiv"
+                journal_ref = ""
                 j_tag = entry.find('arxiv:journal_ref', ns)
                 if j_tag is not None: journal_ref = j_tag.text
                 
@@ -129,7 +140,6 @@ def main(entry):
         return get_safe(GoogleSearch(params).get_dict(), "articles", [])
 
     response = query(_id)
-    # Removed limit for production run
 
     sources = []
 
@@ -148,39 +158,59 @@ def main(entry):
         cite_id = None
         final_authors = get_safe(work, "authors", "")
         final_title = gs_title
+        
+        # Start with Google Scholar's publisher string
         final_pub = get_safe(work, "publication", "")
+        
         final_link = "" 
         
         # --- 3. EXTERNAL ENRICHMENT ---
-        # ArXiv
+        
+        # --- A. Check ArXiv ---
         arxiv_data = search_arxiv_by_title(gs_title)
         if arxiv_data:
             ax_id, ax_auth, ax_title, ax_doi, ax_journal, ax_year = arxiv_data
+            
+            # ArXiv is often more up-to-date with authors/titles
             final_authors = ax_auth
             final_title = ax_title 
             if ax_year and len(ax_year) == 4: final_year = ax_year
             
             if ax_doi:
+                # If ArXiv knows the DOI, it's definitely published.
                 cite_id = f"doi:{ax_doi}"
                 final_link = f"https://doi.org/{ax_doi}"
-                final_pub = ax_journal if ax_journal else final_pub
+                # If ArXiv metadata has a real journal ref, use it.
+                if is_valid_journal(ax_journal):
+                    final_pub = ax_journal
+                # Else: Keep the Google Scholar journal we already had (don't overwrite with 'arXiv')
             else:
+                # No DOI yet (Preprint status)
                 cite_id = f"arxiv:{ax_id}"
                 final_link = f"https://arxiv.org/abs/{ax_id}"
-                final_pub = "arXiv"
+                
+                # --- CRITICAL FIX FOR JOURNAL NAME ---
+                # Only overwrite publisher with "arXiv" if we DON'T have a real journal yet.
+                if not is_valid_journal(final_pub):
+                    final_pub = "arXiv"
+                # If final_pub was "Physical Review B", we KEEP it, even though we link to ArXiv.
 
-        # Crossref
+        # --- B. Check Crossref (if no ID yet) ---
         if not cite_id:
             crossref_data = find_doi_strict(gs_title)
             if crossref_data:
                 doi, doi_auth, doi_jour, cr_year = crossref_data
                 cite_id = f"doi:{doi}"
                 final_authors = doi_auth
-                final_pub = doi_jour
                 final_link = f"https://doi.org/{doi}"
+                
+                # Crossref usually has the official journal name -> Priority 1
+                if is_valid_journal(doi_jour):
+                    final_pub = doi_jour
+                    
                 if cr_year and len(cr_year) == 4: final_year = cr_year
 
-        # Fallback Link
+        # --- C. Fallback Link ---
         if not cite_id:
             gs_link = get_safe(work, "link", "")
             if gs_link and "scholar.google" not in gs_link and gs_link.startswith("http"):
@@ -204,7 +234,6 @@ def main(entry):
         author_list = [a.strip() for a in highlighted.split(",")]
 
         # --- 5. DATE FIX ---
-        # Create a full date string "YYYY-01-01" so Liquid's "date" filter works.
         sortable_date = f"{final_year}-01-01" if final_year else ""
 
         source = {
@@ -212,8 +241,8 @@ def main(entry):
             "title": final_title,
             "authors": author_list,
             "publisher": clean_pub_str,
-            "date": sortable_date,  # <--- CRITICAL FIX: "2023-01-01"
-            "year": final_year,     # "2023"
+            "date": sortable_date,
+            "year": final_year,
             "link": final_link,
         }
         source.update(entry)
