@@ -1,0 +1,151 @@
+<div class="research-card-wrapper">
+    <a href="{{ include.link }}" class="research-card-link">
+        <div class="card research-card">
+            
+            <div class="card-img-box">
+                <img src="{{ include.image | relative_url }}" alt="{{ include.title }}">
+            </div>
+            
+            <div class="card-body-box">
+                <div class="research-title-container">
+                    <h5 class="research-title">{{ include.title }}</h5>
+                </div>
+                
+                <div class="research-meta-container">
+                    <div class="research-journal">{{ include.journal }}</div>
+                    <div class="research-authors">{{ include.authors }}</div>
+                </div>
+
+                <div class="research-abstract">
+                    {{ include.abstract }}
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<style>
+    /* 1. Layout & Base Styles */
+    .research-card-wrapper {
+        height: 100%;
+        margin-bottom: 15px; /* Compact margin */
+    }
+    .research-card-link {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: block;
+        height: 100%;
+    }
+    .research-card {
+        border: none;
+        background: transparent;
+        transition: transform 0.3s ease, z-index 0s;
+        height: 100%;
+        position: relative;
+    }
+
+    /* 2. Image Box (Compact) */
+    .card-img-box {
+        height: 160px; /* Reduced height for compactness */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 8px; /* Reduced gap */
+    }
+    .card-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* 3. Text Styling & Alignment Boxes */
+    .card-body-box {
+        background: #fff;
+        padding: 10px; /* Reduced padding */
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Title area */
+    .research-title-container {
+        height: 3.6rem; /* Fits ~3 lines of text exactly */
+        overflow: hidden;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start; /* Align top */
+        justify-content: center;
+    }
+    .research-title {
+        font-weight: bold;
+        color: #000;
+        font-size: 1.0rem; /* Slightly smaller for compactness */
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+        
+        /* Cut off if longer than 3 lines */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Journal/Author area */
+    .research-meta-container {
+        height: 3.5rem; /* Fits ~3 lines */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .research-journal {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #444;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+    .research-authors {
+        font-size: 0.8rem;
+        color: #666;
+        text-align: center;
+        line-height: 1.2;
+        
+        /* Truncate authors if too long */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 4. Abstract (Scrollable & Compact) */
+    .research-abstract {
+        display: none;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        color: #333;
+        text-align: justify;
+        height: 150px; /* Fixed height for scroll window */
+        overflow-y: auto;
+        border-top: 1px solid #ddd;
+        padding-top: 8px;
+        margin-top: 8px;
+    }
+
+    /* 5. HOVER EFFECTS */
+    .research-card:hover {
+        transform: scale(1.15);
+        z-index: 100;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        background: #fff;
+    }
+    .research-card:hover .research-abstract {
+        display: block;
+    }
+</style>
