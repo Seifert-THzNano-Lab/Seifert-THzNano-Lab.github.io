@@ -34,7 +34,7 @@ For technical specifications and quotes, visit our partner site below.
 
 {%
   include feature.html
-  image="images/teraspintec.png"
+  image="images/TeraSpinTec.png"
   link="https://teraspintec.com"
   title="Visit TeraSpinTec.com"
   text="Explore the T-Spin: The next-generation spintronic terahertz emitter for gapless, ultrabroadband spectroscopy."
