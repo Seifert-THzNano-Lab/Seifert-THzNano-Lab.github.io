@@ -534,7 +534,7 @@
     <h1 id="research">
 <i class="icon fa-solid fa-microscope"></i>Research</h1>
 
-<p>We develop and use novel approaches for terahertz time-domain spectroscopy capable of combing femtosecond temporal and nanometer spatial resolutions. 
+<p>We develop and use novel approaches for terahertz time-domain spectroscopy capable of combining femtosecond temporal and nanometer spatial resolutions. 
 These steps are key to explore ultrafast dynamics in complex nanomaterials on the spatiotemporal scales relevant for applications and fundamental insights.</p>
   </section>
 
@@ -551,46 +551,496 @@ These steps are key to explore ultrafast dynamics in complex nanomaterials on th
 
 <h2 id="highlighted">Highlighted</h2>
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a class="citation-image" aria-label="citation link">
-        <img src="" alt="citation image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+<div class="custom-grid-container dim-on-hover">
+  
+    <div class="custom-grid-item">
+      <div class="research-card-wrapper">
+    <a href="https://doi.org/10.1038/s41565-023-01470-8" class="research-card-link">
+        <div class="card research-card">
+            
+            <div class="card-img-box">
+                <img src="/images/natnano_orbital.png" alt="Time-domain observation of ballistic orbital-angular-momentum currents with giant relaxation length in tungsten">
+            </div>
+            
+            <div class="card-body-box">
+                <div class="research-title-container">
+                    <h5 class="research-title">Time-domain observation of ballistic orbital-angular-momentum currents with giant relaxation length in tungsten</h5>
+                </div>
+                
+                <div class="research-meta-container">
+                    <div class="research-journal">Nature Nanotechnology (2023)</div>
+                    <div class="research-authors">Seifert et al.</div>
+                </div>
 
-    <div class="citation-text">
-      
-      
-
-      <div class="citation-title">
-        [no title info]
-      </div>
-
-      <div class="citation-authors" tabindex="0">
-        
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">[no publisher info]</span>
-        
-         · 
-        
-        <span class="citation-id">
-          [no id info]
-        </span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
+                <div class="research-abstract">
+                    The emerging field of orbitronics exploits the electron orbital momentum L. Compared to spin-polarized electrons, L may allow the transfer of magnetic information with considerably higher density over longer distances in more materials. However, direct experimental observation of L currents, their extended propagation lengths and their conversion into charge currents has remained challenging.
+                </div>
+            </div>
+        </div>
+    </a>
 </div>
+
+<style>
+    /* 1. Layout & Base Styles */
+    .research-card-wrapper {
+        height: 100%;
+        margin-bottom: 15px; /* Compact margin */
+    }
+    .research-card-link {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: block;
+        height: 100%;
+    }
+    .research-card {
+        border: none;
+        background: transparent;
+        transition: transform 0.3s ease, z-index 0s;
+        height: 100%;
+        position: relative;
+    }
+
+    /* 2. Image Box (Compact) */
+    .card-img-box {
+        height: 160px; /* Reduced height for compactness */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 8px; /* Reduced gap */
+    }
+    .card-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* 3. Text Styling & Alignment Boxes */
+    .card-body-box {
+        background: #fff;
+        padding: 10px; /* Reduced padding */
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Title area */
+    .research-title-container {
+        height: 3.6rem; /* Fits ~3 lines of text exactly */
+        overflow: hidden;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start; /* Align top */
+        justify-content: center;
+    }
+    .research-title {
+        font-weight: bold;
+        color: #000;
+        font-size: 1.0rem; /* Slightly smaller for compactness */
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+        
+        /* Cut off if longer than 3 lines */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Journal/Author area */
+    .research-meta-container {
+        height: 3.5rem; /* Fits ~3 lines */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .research-journal {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #444;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+    .research-authors {
+        font-size: 0.8rem;
+        color: #666;
+        text-align: center;
+        line-height: 1.2;
+        
+        /* Truncate authors if too long */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 4. Abstract (Scrollable & Compact) */
+    .research-abstract {
+        display: none;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        color: #333;
+        text-align: justify;
+        height: 150px; /* Fixed height for scroll window */
+        overflow-y: auto;
+        border-top: 1px solid #ddd;
+        padding-top: 8px;
+        margin-top: 8px;
+    }
+
+    /* 5. HOVER EFFECTS */
+    .research-card:hover {
+        transform: scale(1.15);
+        z-index: 100;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        background: #fff;
+    }
+    .research-card:hover .research-abstract {
+        display: block;
+    }
+</style>
+    </div>
+  
+    <div class="custom-grid-item">
+      <div class="research-card-wrapper">
+    <a href="https://doi.org/10.1063/5.0226564" class="research-card-link">
+        <div class="card research-card">
+            
+            <div class="card-img-box">
+                <img src="/images/hybrid_emitter.png" alt="Tunable ultrabroadband hybrid terahertz emitter combining a spintronic and a GaSe source">
+            </div>
+            
+            <div class="card-body-box">
+                <div class="research-title-container">
+                    <h5 class="research-title">Tunable ultrabroadband hybrid terahertz emitter combining a spintronic and a GaSe source</h5>
+                </div>
+                
+                <div class="research-meta-container">
+                    <div class="research-journal">Applied Physics Letters (2024)</div>
+                    <div class="research-authors">Alostaz,..., Seifert</div>
+                </div>
+
+                <div class="research-abstract">
+                    Terahertz (THz) time-domain spectroscopy (TDS) is a sensitive approach to material characterization. It critically relies on a sufficiently large bandwidth, which is not straightforwardly available in typical THz-TDS systems that are often limited to below 3 THz. Here, we introduce a hybrid THz-source concept based on a spintronic THz emitter (STE).
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<style>
+    /* 1. Layout & Base Styles */
+    .research-card-wrapper {
+        height: 100%;
+        margin-bottom: 15px; /* Compact margin */
+    }
+    .research-card-link {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: block;
+        height: 100%;
+    }
+    .research-card {
+        border: none;
+        background: transparent;
+        transition: transform 0.3s ease, z-index 0s;
+        height: 100%;
+        position: relative;
+    }
+
+    /* 2. Image Box (Compact) */
+    .card-img-box {
+        height: 160px; /* Reduced height for compactness */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 8px; /* Reduced gap */
+    }
+    .card-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* 3. Text Styling & Alignment Boxes */
+    .card-body-box {
+        background: #fff;
+        padding: 10px; /* Reduced padding */
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Title area */
+    .research-title-container {
+        height: 3.6rem; /* Fits ~3 lines of text exactly */
+        overflow: hidden;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start; /* Align top */
+        justify-content: center;
+    }
+    .research-title {
+        font-weight: bold;
+        color: #000;
+        font-size: 1.0rem; /* Slightly smaller for compactness */
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+        
+        /* Cut off if longer than 3 lines */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Journal/Author area */
+    .research-meta-container {
+        height: 3.5rem; /* Fits ~3 lines */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .research-journal {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #444;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+    .research-authors {
+        font-size: 0.8rem;
+        color: #666;
+        text-align: center;
+        line-height: 1.2;
+        
+        /* Truncate authors if too long */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 4. Abstract (Scrollable & Compact) */
+    .research-abstract {
+        display: none;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        color: #333;
+        text-align: justify;
+        height: 150px; /* Fixed height for scroll window */
+        overflow-y: auto;
+        border-top: 1px solid #ddd;
+        padding-top: 8px;
+        margin-top: 8px;
+    }
+
+    /* 5. HOVER EFFECTS */
+    .research-card:hover {
+        transform: scale(1.15);
+        z-index: 100;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        background: #fff;
+    }
+    .research-card:hover .research-abstract {
+        display: block;
+    }
+</style>
+    </div>
+  
+    <div class="custom-grid-item">
+      <div class="research-card-wrapper">
+    <a href="https://doi.org/10.48550/arXiv.2507.00977" class="research-card-link">
+        <div class="card research-card">
+            
+            <div class="card-img-box">
+                <img src="/images/400vs800.png" alt="Ultrafast electron heating as the dominant driving force of photoinduced terahertz spin currents">
+            </div>
+            
+            <div class="card-body-box">
+                <div class="research-title-container">
+                    <h5 class="research-title">Ultrafast electron heating as the dominant driving force of photoinduced terahertz spin currents</h5>
+                </div>
+                
+                <div class="research-meta-container">
+                    <div class="research-journal">ArXiv (2025)</div>
+                    <div class="research-authors">Rouzegar,..., Seifert</div>
+                </div>
+
+                <div class="research-abstract">
+                    Ultrafast spintronics strongly relies on the generation, transport, manipulation and detection of terahertz spin currents (TSCs). In F/HM stacks consisting of a ferromagnetic layer F and a heavy-metal layer HM, ultrafast spin currents are typically triggered by femtosecond optical laser pulses. A key open question is whether the initial step, optical excitation and injection of spin currents, can be controlled.
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<style>
+    /* 1. Layout & Base Styles */
+    .research-card-wrapper {
+        height: 100%;
+        margin-bottom: 15px; /* Compact margin */
+    }
+    .research-card-link {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: block;
+        height: 100%;
+    }
+    .research-card {
+        border: none;
+        background: transparent;
+        transition: transform 0.3s ease, z-index 0s;
+        height: 100%;
+        position: relative;
+    }
+
+    /* 2. Image Box (Compact) */
+    .card-img-box {
+        height: 160px; /* Reduced height for compactness */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 8px; /* Reduced gap */
+    }
+    .card-img-box img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* 3. Text Styling & Alignment Boxes */
+    .card-body-box {
+        background: #fff;
+        padding: 10px; /* Reduced padding */
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Title area */
+    .research-title-container {
+        height: 3.6rem; /* Fits ~3 lines of text exactly */
+        overflow: hidden;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: flex-start; /* Align top */
+        justify-content: center;
+    }
+    .research-title {
+        font-weight: bold;
+        color: #000;
+        font-size: 1.0rem; /* Slightly smaller for compactness */
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+        
+        /* Cut off if longer than 3 lines */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ALIGNMENT FIX: Fixed height for Journal/Author area */
+    .research-meta-container {
+        height: 3.5rem; /* Fits ~3 lines */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .research-journal {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #444;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+    .research-authors {
+        font-size: 0.8rem;
+        color: #666;
+        text-align: center;
+        line-height: 1.2;
+        
+        /* Truncate authors if too long */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 4. Abstract (Scrollable & Compact) */
+    .research-abstract {
+        display: none;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        color: #333;
+        text-align: justify;
+        height: 150px; /* Fixed height for scroll window */
+        overflow-y: auto;
+        border-top: 1px solid #ddd;
+        padding-top: 8px;
+        margin-top: 8px;
+    }
+
+    /* 5. HOVER EFFECTS */
+    .research-card:hover {
+        transform: scale(1.15);
+        z-index: 100;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        background: #fff;
+    }
+    .research-card:hover .research-abstract {
+        display: block;
+    }
+</style>
+    </div>
+  
+</div>
+
+<style>
+  .custom-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+  }
+  .custom-grid-item {
+      width: 33.333%;
+      padding: 0 10px;
+      box-sizing: border-box;
+  }
+  @media (max-width: 768px) {
+      .custom-grid-item { width: 100%; }
+  }
+  .dim-on-hover:hover .research-card {
+      opacity: 0.4;
+      filter: grayscale(100%);
+  }
+  .dim-on-hover .research-card:hover {
+      opacity: 1 !important;
+      filter: none !important;
+  }
+</style>
   </section>
 
   
