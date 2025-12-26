@@ -7,63 +7,91 @@ from serpapi import GoogleSearch
 from util import *
 
 def similarity(a, b):
-    """Calculates how similar two titles are (0.0 to 1.0)"""
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
-def get_arxiv_data(link):
+def clean_journal(text):
     """
-    Extracts ArXiv ID and fetches FULL author list from ArXiv API.
-    Returns: (id, author_string)
+    Cleaning strictly for DISPLAY purposes.
+    Removes patterns like 'Vol. 12', 'pp. 100-200', and ', 2023'.
     """
-    # Robust regex for ArXiv IDs (handles versions v1, v2 etc)
-    match = re.search(r'(\d{4}\.\d{4,5})(v\d+)?', link)
-    if not match:
-        return None, None
-    
-    arxiv_id = match.group(1) # e.g. 2305.12345
+    if not text: return ""
+    text = re.sub(r'\d+\s*\(\d+\).*', '', text)
+    text = re.sub(r'Vol\.\s*\d+.*', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'pp\.\s*\d+.*', '', text, flags=re.IGNORECASE)
+    # Remove year at the end (e.g., ", 2023")
+    text = re.sub(r',\s*\d{4}.*', '', text)
+    text = re.sub(r'[\d,-]+$', '', text)
+    return text.strip()
+
+def extract_year_safe(text):
+    """
+    Finds the first 4-digit year (19xx or 20xx) in a string.
+    """
+    if not text: return ""
+    match = re.search(r'\b(19|20)\d{2}\b', str(text))
+    if match:
+        return match.group(0)
+    return ""
+
+def search_arxiv_by_title(title):
+    if not title or len(title) < 5: return None
+    clean_query = re.sub(r'[^a-zA-Z0-9\s]', '', title)
     
     try:
-        url = f"https://export.arxiv.org/api/query?id_list={arxiv_id}"
-        response = requests.get(url, timeout=10)
-        # Parse XML (Atom format)
+        url = f'http://export.arxiv.org/api/query?search_query=all:{requests.utils.quote(clean_query)}&max_results=1'
+        response = requests.get(url, timeout=5)
         root = ET.fromstring(response.content)
-        ns = {'atom': 'http://www.w3.org/2005/Atom'}
+        ns = {'atom': 'http://www.w3.org/2005/Atom', 'arxiv': 'http://arxiv.org/schemas/atom'}
         
-        # Extract authors
-        authors = []
         entry = root.find('atom:entry', ns)
         if entry:
-            for author in entry.findall('atom:author/atom:name', ns):
-                authors.append(author.text)
+            found_title = entry.find('atom:title', ns).text.strip()
+            found_title = re.sub(r'\s+', ' ', found_title)
             
-            # Return formatted arxiv ID and full author list
-            return f"arxiv:{arxiv_id}", ", ".join(authors)
+            if similarity(title, found_title) > 0.85:
+                id_url = entry.find('atom:id', ns).text
+                arxiv_id = id_url.split('/abs/')[-1].split('v')[0]
+                
+                authors = []
+                for author in entry.findall('atom:author/atom:name', ns):
+                    name_parts = author.text.strip().split()
+                    if len(name_parts) > 1:
+                        authors.append(f"{name_parts[-1]}, {' '.join(name_parts[:-1])}")
+                    else:
+                        authors.append(author.text)
+                
+                doi = None
+                doi_tag = entry.find('arxiv:doi', ns)
+                if doi_tag is not None: doi = doi_tag.text
+
+                journal_ref = "arXiv"
+                j_tag = entry.find('arxiv:journal_ref', ns)
+                if j_tag is not None: journal_ref = j_tag.text
+                
+                published = entry.find('atom:published', ns).text
+                year = published[:4] if published else ""
+
+                return arxiv_id, ", ".join(authors), found_title, doi, journal_ref, year
     except:
         pass
-    
-    return None, None
+    return None
 
 def find_doi_strict(title):
-    """
-    Queries Crossref but ONLY accepts if title matches closely (>90%).
-    This prevents 'mixed up' DOIs.
-    """
     try:
         url = f"https://api.crossref.org/works?query.bibliographic={requests.utils.quote(title)}&rows=1"
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, timeout=5)
         data = response.json()
         items = data.get('message', {}).get('items', [])
         
         if items:
             item = items[0]
             found_title = item.get('title', [''])[0]
-            
-            # SAFETY CHECK: Compare titles
-            # If the search result isn't >85% similar to our paper, reject it.
             if similarity(title, found_title) < 0.85:
-                return None, None
+                return None
             
             doi = item.get('DOI')
+            journal = item.get('container-title', [''])[0]
+            
             authors = []
             for a in item.get('author', []):
                 family = a.get('family', '')
@@ -72,10 +100,19 @@ def find_doi_strict(title):
                     authors.append(f"{family}, {given}")
                 elif family:
                     authors.append(family)
-            return doi, ", ".join(authors)
+            
+            year = ""
+            if 'published-print' in item:
+                year = str(item['published-print']['date-parts'][0][0])
+            elif 'published-online' in item:
+                year = str(item['published-online']['date-parts'][0][0])
+            elif 'created' in item:
+                year = str(item['created']['date-parts'][0][0])
+
+            return doi, ", ".join(authors), journal, year
     except:
         pass
-    return None, None
+    return None
 
 def main(entry):
     api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
@@ -92,60 +129,97 @@ def main(entry):
         return get_safe(GoogleSearch(params).get_dict(), "articles", [])
 
     response = query(_id)
+    # Removed limit for production run
+
     sources = []
 
     for work in response:
-        title = get_safe(work, "title", "")
-        link = get_safe(work, "link", "")
-        year = get_safe(work, "year", "")
+        # --- 1. YEAR EXTRACTION ---
+        raw_year = str(work.get("year", "")).strip()
+        if raw_year == "None": raw_year = ""
         
-        # --- STRATEGY: ---
-        # 1. Is it ArXiv? -> Use ArXiv API directly. Safest for authors.
-        # 2. Is it a Journal? -> Use Crossref with Strict Matching.
-        # 3. Else -> Fallback to Google Scholar.
+        pub_year = extract_year_safe(work.get("publication", ""))
+        snippet_year = extract_year_safe(work.get("snippet", ""))
 
+        final_year = raw_year or pub_year or snippet_year
+
+        # --- 2. SETUP BASICS ---
+        gs_title = get_safe(work, "title", "")
         cite_id = None
-        full_authors = None
-
-        # CHECK 1: ArXiv
-        if "arxiv.org" in link:
-            cite_id, full_authors = get_arxiv_data(link)
+        final_authors = get_safe(work, "authors", "")
+        final_title = gs_title
+        final_pub = get_safe(work, "publication", "")
+        final_link = "" 
         
-        # CHECK 2: Crossref (Only if not already identified as ArXiv)
-        if not cite_id:
-            doi, crossref_authors = find_doi_strict(title)
-            if doi:
-                cite_id = f"doi:{doi}"
-                full_authors = crossref_authors
-        
-        # CHECK 3: Fallback ID
-        if not cite_id:
-            cite_id = link if link else get_safe(work, "citation_id", "")
+        # --- 3. EXTERNAL ENRICHMENT ---
+        # ArXiv
+        arxiv_data = search_arxiv_by_title(gs_title)
+        if arxiv_data:
+            ax_id, ax_auth, ax_title, ax_doi, ax_journal, ax_year = arxiv_data
+            final_authors = ax_auth
+            final_title = ax_title 
+            if ax_year and len(ax_year) == 4: final_year = ax_year
             
-        # Fallback Authors (Google Scholar snippet)
-        # Only use this if we failed to get full lists from ArXiv or Crossref
-        if not full_authors:
-            raw_authors = get_safe(work, "authors", "")
-        else:
-            raw_authors = full_authors
+            if ax_doi:
+                cite_id = f"doi:{ax_doi}"
+                final_link = f"https://doi.org/{ax_doi}"
+                final_pub = ax_journal if ax_journal else final_pub
+            else:
+                cite_id = f"arxiv:{ax_id}"
+                final_link = f"https://arxiv.org/abs/{ax_id}"
+                final_pub = "arXiv"
 
-        # --- HIGHLIGHTING LOGIC ---
-        # Matches: Seifert, Tom | Seifert, T. | Seifert, T S | Seifert, T.S.
-        # Uses \b to avoid matching "Tobias"
-        pattern = r'(Seifert,?\s+(?:Tom\s+Sebastian|Tom\s+S\.?|T\.?\s?S\.?|T\.?S?|T\.?\b))'
-        highlighted = re.sub(pattern, r'<b>\1</b>', raw_authors, flags=re.IGNORECASE)
+        # Crossref
+        if not cite_id:
+            crossref_data = find_doi_strict(gs_title)
+            if crossref_data:
+                doi, doi_auth, doi_jour, cr_year = crossref_data
+                cite_id = f"doi:{doi}"
+                final_authors = doi_auth
+                final_pub = doi_jour
+                final_link = f"https://doi.org/{doi}"
+                if cr_year and len(cr_year) == 4: final_year = cr_year
+
+        # Fallback Link
+        if not cite_id:
+            gs_link = get_safe(work, "link", "")
+            if gs_link and "scholar.google" not in gs_link and gs_link.startswith("http"):
+                 cite_id = f"url:{gs_link}"
+                 final_link = gs_link
+            else:
+                 safe_search = f"https://google.com/search?q={requests.utils.quote(gs_title)}"
+                 cite_id = f"url:{safe_search}"
+                 final_link = safe_search
+
+        # --- 4. FORMATTING ---
+        clean_pub_str = clean_journal(final_pub)
+        if final_year:
+            clean_pub_str = f"{clean_pub_str} ({final_year})"
         
+        # Highlight Authors
+        p1 = r'(Seifert,?\s+(?:Tom\s+Sebastian|Tom\s+S\.?|'
+        p2 = r'T\.?\s?S\.?|T\.?S?|T\.?\b))'
+        pattern = p1 + p2
+        highlighted = re.sub(pattern, r'<b>\1</b>', final_authors, flags=re.IGNORECASE)
         author_list = [a.strip() for a in highlighted.split(",")]
+
+        # --- 5. DATE FIX ---
+        # Create a full date string "YYYY-01-01" so Liquid's "date" filter works.
+        sortable_date = f"{final_year}-01-01" if final_year else ""
 
         source = {
             "id": cite_id,
-            "title": title,
+            "title": final_title,
             "authors": author_list,
-            "publisher": get_safe(work, "publication", ""),
-            "date": (year + "-01-01") if year else "",
-            "link": link,
+            "publisher": clean_pub_str,
+            "date": sortable_date,  # <--- CRITICAL FIX: "2023-01-01"
+            "year": final_year,     # "2023"
+            "link": final_link,
         }
         source.update(entry)
         sources.append(source)
+
+    # --- 6. FINAL SORT ---
+    sources.sort(key=lambda x: str(x.get('year', '0')), reverse=True)
 
     return sources

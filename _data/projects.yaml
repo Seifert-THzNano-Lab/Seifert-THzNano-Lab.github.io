@@ -1,47 +1,15 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: Ultrafast spin and charge currents in 2D materials
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+  image: images/project_TMDC.png
+  description: We aim at exploring fundamentally new ways to control ultrafast spin and charge currents in ultrathin 2D materials. Currently, our PhD student, [Afnan Alostaz](../members//Afnan Alostaz.html), studies the role of hybrid layers forming between ferromagnets and TMDC and their role in triggering THz spin currets.
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: Terahertz dynamics of coupled orders in multiferroics
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+  image: images/project_multiferroic.png
+  description: Manipulating coupled ferroelectric and magnetic orders on ultrafast time scales holds the promise for efficient future data processing applications. Here, our postdoc, [Reza Rouzegar](../members//Reza Rouzegar.html), studies photoinduced femtosecond charge currents in the multiferroic BiFeO<sub>3</sub>. Our goal is to understand the excitation and couplings of THz ferrons, the ferroelectric equivalent of a magnon.  
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
+- title: Terahertz-emission nanoscopy of quantum materials
+  group: featured
+  image: images/project_snom.png
+  description: Understanding the ultrafast dynamics of electrons and spin on their native scales, femtoseconds and nanometers, is extremely relevant to deepen our understanding of fundamental processes underlying the energy-, linear- and angular-momentum relaxation of electrons. On the other hand, such advancements also bear a large potential to enhance nanoscale applications such as transistors or solar cells. In this project, our postdoc, [Atul Pandey](../members//Atul Pandey.html) combines a metallic scanning probe from an atomic force microscope, yielding nanometer spatial resolution, with ultrabroadband THz time-domain spectroscopy, yielding femtosecond time resolution. The studied sample systems include 2D materials, multiferroics and complex antiferromagnets such as altermagnets.
 
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
-
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software

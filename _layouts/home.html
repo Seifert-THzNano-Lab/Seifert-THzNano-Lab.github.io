@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row mb-5">
+    
+    <div class="col-md-4 mb-4">
+      <div class="card bg-light border-0 h-100">
+        <div class="card-body p-4">
+          <h5 class="text-secondary text-uppercase small font-weight-bold mb-3" style="letter-spacing:1px;">
+            Latest News
+          </h5>
+          <ul class="list-unstyled mb-0">
+            {% for post in site.posts limit:3 %}
+              <li class="mb-3">
+                <div class="text-muted small">
+                  {{ post.date | date: "%b %d, %Y" }}
+                </div>
+                <a href="{{ post.url | relative_url }}" class="text-dark font-weight-bold" style="text-decoration:none;">
+                  {{ post.title }}
+                </a>
+              </li>
+            {% endfor %}
+            {% if site.posts.size == 0 %}
+              <li class="small text-muted">No news updates yet.</li>
+            {% endif %}
+          </ul>
+          <div class="mt-4">
+            <a href="{{ '/news/' | relative_url }}" class="small text-secondary" style="text-decoration:underline;">View all news &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 d-flex flex-column justify-content-center">
+      {{ page.intro | markdownify }}
+    </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      {{ content }}
+    </div>
+  </div>
+</div>

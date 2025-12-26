@@ -31,14 +31,9 @@
       {% assign type = site.data.types[citation.type] %}
       {% include icon.html icon=type.icon %}
 
-      <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | xml_escape }}"
-        {% endif %}
-        class="citation-title"
-      >
+      <div class="citation-title">
         {{ citation.title | default: "[no title info]" }}
-      </a>
+      </div>
 
       <div
         class="citation-authors"
@@ -47,29 +42,26 @@
         {% endif %}
         tabindex="0"
       >
-        {{
-          citation.authors
-          | join: ","
-          | split: ","
-          | array_carve: 50
-          | join: ", "
-          | markdownify
-          | remove: "<p>" | remove: "</p>"
-          | default: "[no author info]"
-        }}
+        {% for author in citation.authors %}
+          {{ author }}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
       </div>
 
       <div class="citation-details">
         <span class="citation-publisher">
           {{- citation.publisher | default: "[no publisher info]" -}}
         </span>
+        
         &nbsp;·&nbsp;
-        <span class="citation-date">
-          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
-        </span>
-        &nbsp;·&nbsp;
+        
         <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
+          {% if citation.link %}
+            <a href="{{ citation.link }}" target="_blank" rel="noopener noreferrer" style="color: #737373; text-decoration: none; font-size: 0.9em;">
+              {{- citation.id | default: "[Link]" -}}
+            </a>
+          {% else %}
+            {{- citation.id | default: "[no id info]" -}}
+          {% endif %}
         </span>
       </div>
 

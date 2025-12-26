@@ -18,12 +18,21 @@ $wrap: 800px;
   border-radius: var(--rounded);
   overflow: hidden;
   box-shadow: var(--shadow);
+  
+  // NEW: Center the image and add white background
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; // Optional: keeps PNGs/SVGs looking clean
+  padding: 10px;          // NEW: Adds breathing room around the image
 }
 
 .feature-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  
+  // CHANGED: 'contain' ensures the full image is visible without cropping
+  object-fit: contain; 
 }
 
 .feature-text {

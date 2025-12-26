@@ -1,0 +1,10 @@
+---
+name: Peer Liebermann
+image: images/people_liebermann.jpg
+role: undergrad
+group: alum
+links:
+
+---
+
+2023-now Master student @ Freie Universität Berlin (T. Kampfrath, T. S. Seifert)
