@@ -1,1 +1,1 @@
-Sitemap: http://www.seifert-lab.com/sitemap.xml
+Sitemap: https://www.seifert-lab.com/sitemap.xml
