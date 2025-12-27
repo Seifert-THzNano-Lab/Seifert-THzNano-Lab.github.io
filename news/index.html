@@ -385,26 +385,42 @@
       <span class="logo">
         
           <svg class="w-64 h-64" viewbox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-
     <defs>
-        <!-- Gradient -->
-        <lineargradient id="structGrad" x1="0" y1="0" x2="200" y2="200" gradientunits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#334155"></stop>
-            <stop offset="100%" stop-color="#64748B"></stop>
+        <lineargradient id="structGrad" x1="0" y1="0" x2="0" y2="200" gradientunits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#475569"></stop>
+            <stop offset="100%" stop-color="#94a3b8"></stop>
         </lineargradient>
 
-        <!-- Animations -->
+        <g id="spin-arrow-up">
+            <line x1="0" y1="10" x2="0" y2="-10" stroke="currentColor" stroke-width="4" stroke-linecap="round"></line>
+            <path d="M-5 -5 L0 -12 L5 -5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+
+        <g id="spin-arrow-down">
+            <line x1="0" y1="-10" x2="0" y2="10" stroke="currentColor" stroke-width="4" stroke-linecap="round"></line>
+            <path d="M-5 5 L0 12 L5 5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+
         <style>
             @keyframes energyFlow {
                 to { stroke-dashoffset: -200; }
             }
-            @keyframes atomBreathe {
-                0%,100% { r: 3.5; opacity: .8; }
-                50%     { r: 5; opacity: 1; }
+
+            /* Highly visible breathing pulse */
+            @keyframes spinStationaryPulse {
+                0%, 100% {
+                    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+                    opacity: 0.7;
+                }
+                50% {
+                    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+                    opacity: 1;
+                }
             }
+
             @keyframes pulseGlow {
                 0%,100% { filter: drop-shadow(0 0 2px rgba(239,68,68,.5)); }
-                50%     { filter: drop-shadow(0 0 6px rgba(239,68,68,.8)); }
+                50%     { filter: drop-shadow(0 0 8px rgba(239,68,68,.9)); }
             }
 
             .wave-flow {
@@ -413,46 +429,32 @@
                     energyFlow 3s linear infinite,
                     pulseGlow 3s ease-in-out infinite;
             }
-            .atom-node {
-                animation: atomBreathe 4s ease-in-out infinite;
+
+            .spin-node {
+                color: url(#structGrad);
+                animation: spinStationaryPulse 3s ease-in-out infinite;
+                /* No transform needed for direction anymore */
                 transform-box: fill-box;
                 transform-origin: center;
             }
-
             .a1 { animation-delay: 0s; }
             .a2 { animation-delay: 1s; }
-            .a3 { animation-delay: 2s; }
         </style>
     </defs>
 
-    <!-- Nanostructure -->
-    <g stroke="url(#structGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M50 60 L100 30 L150 60"></path>
-        <path d="M50 140 L100 170 L150 140"></path>
-        <line x1="50" y1="60" x2="50" y2="85"></line>
-        <line x1="150" y1="60" x2="150" y2="85"></line>
-        <line x1="50" y1="115" x2="50" y2="140"></line>
-        <line x1="150" y1="115" x2="150" y2="140"></line>
+    <rect x="60" y="60" width="80" height="80" rx="4" stroke="url(#structGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></rect>
+
+    <g>
+        <use href="#spin-arrow-up" x="60" y="60" class="spin-node a1"></use>
+        <use href="#spin-arrow-down" x="140" y="60" class="spin-node a2"></use>
+        <use href="#spin-arrow-up" x="140" y="140" class="spin-node a1"></use>
+        <use href="#spin-arrow-down" x="60" y="140" class="spin-node a2"></use>
     </g>
 
-    <!-- Atomic Nodes -->
-    <g fill="white">
-        <circle cx="50" cy="60" r="3.5" class="atom-node a1"></circle>
-        <circle cx="100" cy="30" r="3.5" class="atom-node a2"></circle>
-        <circle cx="150" cy="60" r="3.5" class="atom-node a3"></circle>
-
-        <circle cx="50" cy="140" r="3.5" class="atom-node a1"></circle>
-        <circle cx="100" cy="170" r="3.5" class="atom-node a2"></circle>
-        <circle cx="150" cy="140" r="3.5" class="atom-node a3"></circle>
-    </g>
-
-    <!-- Background Wave -->
     <path d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"></path>
 
-    <!-- Animated Wave -->
     <path class="wave-flow" d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" stroke="#EF4444" stroke-width="5" stroke-linecap="round" fill="none"></path>
 </svg>
-
         
       </span>
     
@@ -575,7 +577,7 @@
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>December 26, 2025</span>
+      <span>December 27, 2025</span>
     </span>
   
 </div>
