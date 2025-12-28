@@ -1,11 +1,11 @@
 ---
-title: Projects
+title: Focus
 nav:
-  order: 2
+  order: 1
   tooltip: Research directions
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}Focus
 
 <div class="lab-grid">
   {% assign featured_projects = site.data.projects | where: "group", "featured" %}

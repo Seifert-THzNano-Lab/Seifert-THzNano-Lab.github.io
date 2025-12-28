@@ -1,11 +1,11 @@
 ---
-title: Research
+title: Papers
 nav:
-  order: 1
+  order: 2
   tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
+# {% include icon.html icon="fa-solid fa-microscope" %}Papers
 
 We develop and use novel approaches for terahertz time-domain spectroscopy capable of combining femtosecond temporal and nanometer spatial resolutions. 
 These steps are key to explore ultrafast dynamics in complex nanomaterials on the spatiotemporal scales relevant for applications and fundamental insights.
