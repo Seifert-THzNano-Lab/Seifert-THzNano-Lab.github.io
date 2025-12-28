@@ -6,9 +6,10 @@ nav:
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Focus
-Our three focus areas describe promising ongoing projects that we plan to further expand in the future. These focus projects include (i) ultrafast charge and spin dynamics in 2D materials, (ii) Coupled ferroelectric polarization - magnetozation dynamics in multiferroics including the emerging class of ferron quasiparticles, and (iii) terahertz nanoscopy of charge dynamics. In the latter approach, we target heterogeneities in quantum materials such as crystallographic domains in 2D systems, magnetic and ferroelectric solitons in multiferroics, and nanoscale dynamics in complex antiferromagnets including the newly discovered group of altermagnets. 
-  
-{% include section.html %}
+
+Our three focus areas describe promising ongoing projects that we plan to further expand in the future.
+
+
 <div class="lab-grid">
   {% assign featured_projects = site.data.projects | where: "group", "featured" %}
   {% for project in featured_projects %}

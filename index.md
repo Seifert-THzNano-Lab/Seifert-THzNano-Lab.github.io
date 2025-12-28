@@ -158,7 +158,7 @@ We focus on magnetic materials and aim at gaining control over the ultrafast dyn
 {%
   include button.html
   link="projects"
-  text="Browse our projects"
+  text="Browse our focus projects"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
