@@ -9,7 +9,7 @@ nav:
 
 ## From Fundamental Research to Market Leader
 
-Our mission is to translate fundamental discoveries in spin dynamics into next-generation **terahertz technology**. A prime example of this successful transfer is the **spintronic terahertz emitter (STE)**—a novel class of broadband, efficient, and low-cost THz sources developed in our laboratories.
+Our mission is to translate fundamental discoveries in spin dynamics into next-generation **terahertz technology**. A prime example of this successful transfer is the **spintronic terahertz emitter (STE)**—a novel class of broadband, efficient, and low-cost THz sources originally devoloped during the PhD thesis of T. S. Seifert in the [Kampfrath laboratory](https://www.physik.fu-berlin.de/en/einrichtungen/ag/ag-kampfrath/index.html).
 
 <figure style="text-align: center; margin: 2rem 0;">
   <img 

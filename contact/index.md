@@ -5,9 +5,34 @@ nav:
   tooltip: Email, address, and location
 ---
 
+<style>
+  /* 1. Default (Light Mode) Styling */
+  .contact-lead {
+    font-size: 1.2em;
+    color: #555; /* Dark text for white background */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* 2. Dark Mode Overrides (System Setting) */
+  @media (prefers-color-scheme: dark) {
+    .contact-lead { color: #e0e0e0 !important; }
+    h1, h3, p, li { color: #e0e0e0; }
+  }
+
+  /* 3. Dark Mode Overrides (Toggle Button) */
+  [data-theme="dark"] .contact-lead { color: #e0e0e0 !important; }
+  [data-theme="dark"] h1, 
+  [data-theme="dark"] h3, 
+  [data-theme="dark"] p,
+  [data-theme="dark"] li { 
+    color: #e0e0e0; 
+  }
+</style>
+
 # {% include icon.html icon="fa-regular fa-envelope" %} Contact Us
 
-<p align="center" style="font-size: 1.2em; color: #555; margin-bottom: 30px;">
+<p align="center" style="font-size: 1.2em; opacity: 0.7; margin-bottom: 30px;">
   Interested in joining the <b>THzNano Lab</b> or have questions about our research? <br>
   Reach out to us through the channels below.
 </p>
@@ -35,9 +60,9 @@ nav:
       </p>
       
       {% include button.html 
-         type="address" 
-         tooltip="View on Google Maps" 
-         link="https://goo.gl/maps/XYZ123" 
+          type="address" 
+          tooltip="View on Google Maps" 
+          link="https://goo.gl/maps/XYZ123" 
       %}
     </div>
   </div>
