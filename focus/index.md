@@ -6,7 +6,9 @@ nav:
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Focus
+Our three focus areas describe the motivation behind ongoing projects that we plan to further expand in the future. 
 
+{% include section.html %}
 <div class="lab-grid">
   {% assign featured_projects = site.data.projects | where: "group", "featured" %}
   {% for project in featured_projects %}
