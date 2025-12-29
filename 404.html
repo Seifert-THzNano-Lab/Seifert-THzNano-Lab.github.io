@@ -332,7 +332,80 @@
     
       <span class="logo">
         
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-64 h-64" viewbox="0 0 200 200"><defs><lineargradient id="structGrad" x1="0" x2="0" y1="0" y2="200" gradientunits="userSpaceOnUse"><stop offset="0%" stop-color="#475569"></stop><stop offset="100%" stop-color="#94a3b8"></stop></lineargradient><g id="spin-arrow-up"><line x1="0" x2="0" y1="10" y2="-10" stroke="currentColor" stroke-linecap="round" stroke-width="4"></line><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M-5 -5 L0 -12 L5 -5"></path></g><g id="spin-arrow-down"><line x1="0" x2="0" y1="-10" y2="10" stroke="currentColor" stroke-linecap="round" stroke-width="4"></line><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M-5 5 L0 12 L5 5"></path></g><style>@keyframes spinStationaryPulse{0%{filter:drop-shadow(0 0 2px rgba(255,255,255,.3));opacity:.7}50%{filter:drop-shadow(0 0 15px #fff);opacity:1}}@keyframes pulseGlow{0%{filter:drop-shadow(0 0 2px rgba(239,68,68,.5))}50%{filter:drop-shadow(0 0 8px rgba(239,68,68,.9))}}.wave-flow{stroke-dasharray:100 100;animation:energyFlow 3s linear infinite,pulseGlow 3s ease-in-out infinite}.spin-node{color:url(#structGrad);animation:spinStationaryPulse 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.a1{animation-delay:0s}.a2{animation-delay:1s}</style></defs><rect width="80" height="80" x="60" y="60" stroke="url(#structGrad)" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" rx="4"></rect><g><use x="60" y="60" class="spin-node a1" href="#spin-arrow-up"></use><use x="140" y="60" class="spin-node a2" href="#spin-arrow-down"></use><use x="140" y="140" class="spin-node a1" href="#spin-arrow-up"></use><use x="60" y="140" class="spin-node a2" href="#spin-arrow-down"></use></g><path fill="none" stroke="#E2E8F0" stroke-linecap="round" stroke-width="4" d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100"></path><path fill="none" stroke="#EF4444" stroke-linecap="round" stroke-width="5" d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" class="wave-flow"></path></svg>
+          <svg class="w-64 h-64" viewbox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <lineargradient id="structGrad" x1="0" y1="0" x2="0" y2="200" gradientunits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#475569"></stop>
+            <stop offset="100%" stop-color="#94a3b8"></stop>
+        </lineargradient>
+
+        <g id="spin-arrow-up">
+            <line x1="0" y1="10" x2="0" y2="-10" stroke="currentColor" stroke-width="4" stroke-linecap="round"></line>
+            <path d="M-5 -5 L0 -12 L5 -5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+
+        <g id="spin-arrow-down">
+            <line x1="0" y1="-10" x2="0" y2="10" stroke="currentColor" stroke-width="4" stroke-linecap="round"></line>
+            <path d="M-5 5 L0 12 L5 5" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+
+        <style>
+            @keyframes energyFlow {
+                to { stroke-dashoffset: -200; }
+            }
+
+            /* UPDATED: More intense fade in/out */
+            @keyframes spinStationaryPulse {
+                0%, 100% {
+                    /* Opacity lowered to 0.1 for deep fade */
+                    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+                    opacity: 0.4; 
+                }
+                50% {
+                    /* Opacity stays at 1 for max brightness */
+                    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
+                    opacity: 1;
+                }
+            }
+
+            @keyframes pulseGlow {
+                0%,100% { filter: drop-shadow(0 0 2px rgba(239,68,68,.5)); }
+                50%     { filter: drop-shadow(0 0 8px rgba(239,68,68,.9)); }
+            }
+
+            .wave-flow {
+                stroke-dasharray: 100 100;
+                animation:
+                    energyFlow 3s linear infinite,
+                    pulseGlow 3s ease-in-out infinite;
+            }
+
+            .spin-node {
+                color: url(#structGrad);
+                /* Animation duration affects speed of fade. 
+                   Change 3s to 2s if you want it faster. */
+                animation: spinStationaryPulse 3s ease-in-out infinite;
+                transform-box: fill-box;
+                transform-origin: center;
+            }
+            .a1 { animation-delay: 0s; }
+            .a2 { animation-delay: 1s; }
+        </style>
+    </defs>
+
+    <rect x="60" y="60" width="80" height="80" rx="4" stroke="url(#structGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></rect>
+
+    <g>
+        <use href="#spin-arrow-up" x="60" y="60" class="spin-node a1"></use>
+        <use href="#spin-arrow-down" x="140" y="60" class="spin-node a2"></use>
+        <use href="#spin-arrow-up" x="140" y="140" class="spin-node a1"></use>
+        <use href="#spin-arrow-down" x="60" y="140" class="spin-node a2"></use>
+    </g>
+
+    <path d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round" fill="none"></path>
+
+    <path class="wave-flow" d="M20 100 Q60 100 70 80 T100 100 T130 120 T180 100" stroke="#EF4444" stroke-width="5" stroke-linecap="round" fill="none"></path>
+</svg>
         
       </span>
     
