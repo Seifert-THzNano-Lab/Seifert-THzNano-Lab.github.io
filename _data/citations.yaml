@@ -451,38 +451,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1364/opticaopen.25541008.v1
-  title: Optical damage thresholds of single-mode fiber-tip spintronic terahertz emitters
-  authors:
-  - Paries
-  - Felix
-  - Selz
-  - Felix
-  - Lampin
-  - Jean-Francois
-  - Kolejak
-  - Pierre
-  - Lezier
-  - Geoffrey
-  - Tiercelin
-  - Nicolas
-  - Vanwolleghem
-  - Mathias
-  - Kampfrath
-  - Tobias
-  - <b>Seifert
-  - T</b>om
-  - von Freymann
-  - Georg
-  - Molter
-  - Daniel
-  publisher: Optica Open (2024)
-  date: '2024-01-01'
-  link: https://doi.org/10.1364/opticaopen.25541008.v1
-  year: '2024'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1021/acs.nanolett.4c00498.s001
   title: 'Terahertz Spin-Conductance Spectroscopy: Probing Coherent and Incoherent
     Ultrafast Spin Tunneling'
@@ -522,6 +490,38 @@
   publisher: Appl. Phys. Lett. 125, (2024)
   date: '2024-01-01'
   link: https://doi.org/10.1063/5.0214469
+  year: '2024'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1364/opticaopen.25541008.v1
+  title: Optical damage thresholds of single-mode fiber-tip spintronic terahertz emitters
+  authors:
+  - Paries
+  - Felix
+  - Selz
+  - Felix
+  - Lampin
+  - Jean-Francois
+  - Kolejak
+  - Pierre
+  - Lezier
+  - Geoffrey
+  - Tiercelin
+  - Nicolas
+  - Vanwolleghem
+  - Mathias
+  - Kampfrath
+  - Tobias
+  - <b>Seifert
+  - T</b>om
+  - von Freymann
+  - Georg
+  - Molter
+  - Daniel
+  publisher: Optica Open (2024)
+  date: '2024-01-01'
+  link: https://doi.org/10.1364/opticaopen.25541008.v1
   year: '2024'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -863,6 +863,46 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: arxiv:2305.01365
+  title: Fiber-tip spintronic terahertz emitters
+  authors:
+  - Paries
+  - Felix
+  - Tiercelin
+  - Nicolas
+  - Lezier
+  - Geoffrey
+  - Vanwolleghem
+  - Mathias
+  - Selz
+  - Felix
+  - Syskaki
+  - Maria-Andromachi
+  - Kammerbauer
+  - Fabian
+  - Jakob
+  - Gerhard
+  - Jourdan
+  - Martin
+  - "Kl\xC4ui"
+  - Mathias
+  - Kaspar
+  - Zdenek
+  - Kampfrath
+  - Tobias
+  - <b>Seifert
+  - Tom S.</b>
+  - Freymann
+  - Georg Von
+  - Molter
+  - Daniel
+  publisher: Optics express (2023)
+  date: '2023-01-01'
+  link: https://arxiv.org/abs/2305.01365
+  year: '2023'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1103/PhysRevLett.132.226703
   title: Accessing ultrafast spin-transport dynamics in copper using broadband terahertz
     spectroscopy
@@ -1002,46 +1042,6 @@
     \ \u2026 (2023)"
   date: '2023-01-01'
   link: https://google.com/search?q=Spintronic%20Terahertz%20Emitter%20on%20a%20Fiber%20Tip
-  year: '2023'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2305.01365
-  title: Fiber-tip spintronic terahertz emitters
-  authors:
-  - Paries
-  - Felix
-  - Tiercelin
-  - Nicolas
-  - Lezier
-  - Geoffrey
-  - Vanwolleghem
-  - Mathias
-  - Selz
-  - Felix
-  - Syskaki
-  - Maria-Andromachi
-  - Kammerbauer
-  - Fabian
-  - Jakob
-  - Gerhard
-  - Jourdan
-  - Martin
-  - "Kl\xC4ui"
-  - Mathias
-  - Kaspar
-  - Zdenek
-  - Kampfrath
-  - Tobias
-  - <b>Seifert
-  - Tom S.</b>
-  - Freymann
-  - Georg Von
-  - Molter
-  - Daniel
-  publisher: Optics express (2023)
-  date: '2023-01-01'
-  link: https://arxiv.org/abs/2305.01365
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1700,7 +1700,7 @@
   - D Reiss
   - O Gueckstock
   - '...'
-  publisher: Bulletin of the American Physical Society (2021)
+  publisher: APS March Meeting Abstracts 2021, P38. (2021)
   date: '2021-01-01'
   link: https://google.com/search?q=Same%20driving%20force%20for%20laser-induced%20ultrafast%20demagnetization%20and%20THz%20spin%20transport
   year: '2021'
