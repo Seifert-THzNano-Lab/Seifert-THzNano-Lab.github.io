@@ -1,6 +1,5 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-<<<<<<< HEAD
 - id: doi:10.1103/n1nw-2wyg
   title: Terahertz time-domain signatures of the inverse Edelstein effect in topological-insulator|
     ferromagnet heterostructures
@@ -61,31 +60,6 @@
   publisher: arXiv preprint arXiv:2601. (2026)
   date: '2026-01-01'
   link: https://google.com/search?q=Terahertz%20magneto-photocurrents%20in%20the%20topological%20insulator%20BiSe%20probe%20its%20topological%20surface%20states
-=======
-- id: arxiv:2601.01030
-  title: Terahertz magneto-photocurrents in the topological insulator Bi$_2$Se$_3$
-    probe its topological surface states
-  authors:
-  - In
-  - Chihun
-  - Bierhance
-  - Genaro
-  - Jain
-  - Deepti
-  - <b>Seifert
-  - Tom S.</b>
-  - Gueckstock
-  - Oliver
-  - Mantovan
-  - Roberto
-  - Oh
-  - Seongshik
-  - Kampfrath
-  - Tobias
-  publisher: arXiv (2026)
-  date: '2026-01-01'
-  link: https://arxiv.org/abs/2601.01030
->>>>>>> 4d27eef69a34ee40c71457683573123b4d44c90b
   year: '2026'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -131,7 +105,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-<<<<<<< HEAD
 - id: doi:10.1126/sciadv.adz6549
   title: Influence of atomic-scale defects on coherent phonon excitations by THz near
     fields in an STM
@@ -165,11 +138,6 @@
   file: google-scholar.yaml
 - id: url:https://google.com/search?q=Terahertz%20switching%20of%20antiferromagnetic%20order%20by%20N%5C%27eel%20spin-orbit%20torques
   title: Terahertz switching of antiferromagnetic order by N\'eel spin-orbit torques
-=======
-- id: arxiv:2506.22327
-  title: Terahertz time-domain signatures of the inverse Edelstein effect in topological-insulator|ferromagnet
-    heterostructures
->>>>>>> 4d27eef69a34ee40c71457683573123b4d44c90b
   authors:
   - Y Behovits
   - AL Chekhov
@@ -185,87 +153,9 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-<<<<<<< HEAD
 - id: doi:10.1103/mk8h-yzkj
   title: Hallmarks of Ballistic Terahertz Magnon Currents in an Antiferromagnetic
     Insulator
-=======
-- id: arxiv:2506.08219
-  title: Influence of atomic-scale defects on coherent phonon excitations by THz near
-    fields in an STM
-  authors:
-  - Rai
-  - Vibhuti N.
-  - Sim
-  - Junyoung
-  - Faaber
-  - Florian
-  - Bogdanoff
-  - Nils
-  - Trishin
-  - Sergey
-  - Wiechers
-  - Paul
-  - <b>Seifert
-  - Tom S.</b>
-  - Kampfrath
-  - Tobias
-  - Lotze
-  - Christian
-  - Franke
-  - Katharina J.
-  publisher: Science Advances (2025)
-  date: '2025-01-01'
-  link: https://arxiv.org/abs/2506.08219
-  year: '2025'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2512.23397
-  title: "Terahertz switching of antiferromagnetic order by N\xE9el spin-orbit torques"
-  authors:
-  - Behovits
-  - Yannic
-  - Chekhov
-  - Alexander L.
-  - Ruge
-  - Amon
-  - Rouzegar
-  - Reza
-  - Serrano
-  - Bruno Rosinus
-  - Fellows
-  - Alexander P.
-  - John
-  - Ben
-  - "Th\xE4mer"
-  - Martin
-  - Reimers
-  - Sonka
-  - Renner
-  - Fynn
-  - Dannegger
-  - Tobias
-  - Nowak
-  - Ulrich
-  - <b>Seifert
-  - Tom S.</b>
-  - "Kl\xE4ui"
-  - Mathias
-  - Jourdan
-  - Martin
-  - Kampfrath
-  - Tobias
-  publisher: arXiv (2025)
-  date: '2025-01-01'
-  link: https://arxiv.org/abs/2512.23397
-  year: '2025'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2504.07682
-  title: Hallmarks of terahertz magnon currents in an antiferromagnetic insulator
->>>>>>> 4d27eef69a34ee40c71457683573123b4d44c90b
   authors:
   - Qiu
   - Hongsong
@@ -735,7 +625,7 @@
   - Yuriy
   - Kampfrath
   - Tobias
-  publisher: Nature Nanotechnology (2023)
+  publisher: Nature Nanotechnology (2023) (2023)
   date: '2023-01-01'
   link: https://doi.org/10.1038/s41565-023-01470-8
   year: '2023'
@@ -1653,7 +1543,7 @@
   - D Reiss
   - O Gueckstock
   - '...'
-  publisher: Bulletin of the American Physical Society (2021)
+  publisher: APS March Meeting Abstracts 2021, P38. (2021)
   date: '2021-01-01'
   link: https://google.com/search?q=Same%20driving%20force%20for%20laser-induced%20ultrafast%20demagnetization%20and%20THz%20spin%20transport
   year: '2021'
