@@ -45,6 +45,25 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: url:https://google.com/search?q=Spatiotemporal%20Terahertz%20Emission%20Nanoscopy%20of%20Spintronic%20Photocurrents
+  title: Spatiotemporal Terahertz Emission Nanoscopy of Spintronic Photocurrents
+  authors:
+  - F Paries
+  - R Rouzegar
+  - J Cai
+  - M Dai
+  - F Selz
+  - J Koelbel
+  - G Lezier
+  - D Molter
+  - '...'
+  publisher: arXiv preprint arXiv:2602. (2026)
+  date: '2026-01-01'
+  link: https://google.com/search?q=Spatiotemporal%20Terahertz%20Emission%20Nanoscopy%20of%20Spintronic%20Photocurrents
+  year: '2026'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: url:https://google.com/search?q=Terahertz%20magneto-photocurrents%20in%20the%20topological%20insulator%20BiSe%20probe%20its%20topological%20surface%20states
   title: Terahertz magneto-photocurrents in the topological insulator BiSe probe its
     topological surface states
@@ -1852,59 +1871,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1038/s41467-018-05135-2
-  title: Femtosecond formation dynamics of the spin Seebeck effect revealed by terahertz
-    spectroscopy
-  authors:
-  - <b>Seifert
-  - T. S.</b>
-  - Jaiswal
-  - S.
-  - Barker
-  - J.
-  - Weber
-  - S. T.
-  - Razdolski
-  - I.
-  - Cramer
-  - J.
-  - Gueckstock
-  - O.
-  - Maehrlein
-  - S.
-  - Nadvornik
-  - L.
-  - Watanabe
-  - S.
-  - Ciccarelli
-  - C.
-  - Melnikov
-  - A.
-  - Jakob
-  - G.
-  - "M\xFCnzenberg"
-  - M.
-  - Goennenwein
-  - S. T. B.
-  - Woltersdorf
-  - G.
-  - Rethfeld
-  - B.
-  - Brouwer
-  - P. W.
-  - Wolf
-  - M.
-  - "Kl\xE4ui"
-  - M.
-  - Kampfrath
-  - T.
-  publisher: Nature communications (2017)
-  date: '2017-01-01'
-  link: https://doi.org/10.1038/s41467-018-05135-2
-  year: '2017'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: arxiv:1711.08444
   title: THz electrical writing speed in an antiferromagnetic memory
   authors:
@@ -1966,6 +1932,59 @@
   publisher: Applied Physics Letters (2017)
   date: '2017-01-01'
   link: https://doi.org/10.1063/1.4986755
+  year: '2017'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1038/s41467-018-05135-2
+  title: Femtosecond formation dynamics of the spin Seebeck effect revealed by terahertz
+    spectroscopy
+  authors:
+  - <b>Seifert
+  - T. S.</b>
+  - Jaiswal
+  - S.
+  - Barker
+  - J.
+  - Weber
+  - S. T.
+  - Razdolski
+  - I.
+  - Cramer
+  - J.
+  - Gueckstock
+  - O.
+  - Maehrlein
+  - S.
+  - Nadvornik
+  - L.
+  - Watanabe
+  - S.
+  - Ciccarelli
+  - C.
+  - Melnikov
+  - A.
+  - Jakob
+  - G.
+  - "M\xFCnzenberg"
+  - M.
+  - Goennenwein
+  - S. T. B.
+  - Woltersdorf
+  - G.
+  - Rethfeld
+  - B.
+  - Brouwer
+  - P. W.
+  - Wolf
+  - M.
+  - "Kl\xE4ui"
+  - M.
+  - Kampfrath
+  - T.
+  publisher: ' (2017)'
+  date: '2017-01-01'
+  link: https://doi.org/10.1038/s41467-018-05135-2
   year: '2017'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
