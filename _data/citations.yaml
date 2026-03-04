@@ -375,37 +375,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1063/5.0214469
-  title: Rotating spintronic terahertz emitter optimized for microjoule pump-pulse
-    energies and megahertz repetition rates
-  authors:
-  - Vaitsi
-  - Alkisti
-  - Sleziona
-  - Vivien
-  - "Parra L\xF3pez"
-  - Luis E.
-  - Behovits
-  - Yannic
-  - Schulz
-  - Fabian
-  - "Mart\xEDn Saban\xE9s"
-  - Natalia
-  - Kampfrath
-  - Tobias
-  - Wolf
-  - Martin
-  - <b>Seifert
-  - Tom S.</b>
-  - "M\xFCller"
-  - Melanie
-  publisher: Applied Physics Letters (2024)
-  date: '2024-01-01'
-  link: https://doi.org/10.1063/5.0214469
-  year: '2024'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1364/opticaopen.25541008.v1
   title: Optical damage thresholds of single-mode fiber-tip spintronic terahertz emitters
   authors:
@@ -434,6 +403,37 @@
   publisher: Optica Open (2024)
   date: '2024-01-01'
   link: https://doi.org/10.1364/opticaopen.25541008.v1
+  year: '2024'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1063/5.0214469
+  title: Rotating spintronic terahertz emitter optimized for microjoule pump-pulse
+    energies and megahertz repetition rates
+  authors:
+  - Vaitsi
+  - Alkisti
+  - Sleziona
+  - Vivien
+  - "Parra L\xF3pez"
+  - Luis E.
+  - Behovits
+  - Yannic
+  - Schulz
+  - Fabian
+  - "Mart\xEDn Saban\xE9s"
+  - Natalia
+  - Kampfrath
+  - Tobias
+  - Wolf
+  - Martin
+  - <b>Seifert
+  - Tom S.</b>
+  - "M\xFCller"
+  - Melanie
+  publisher: Applied Physics Letters (2024)
+  date: '2024-01-01'
+  link: https://doi.org/10.1063/5.0214469
   year: '2024'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -667,60 +667,6 @@
   publisher: Physical Review Applied (2023)
   date: '2023-01-01'
   link: https://doi.org/10.1103/physrevapplied.19.034018
-  year: '2023'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/irmmw-thz57677.2023.10299196
-  title: "Emission of coherent THz magnons in an antiferromagnetic insulator triggered\
-    \ by ultrafast spin\u2013phonon interactions"
-  authors:
-  - Rongione
-  - E.
-  - Gueckstock
-  - O.
-  - Mattern
-  - M.
-  - Gomonay
-  - O.
-  - Meer
-  - H.
-  - Schmitt
-  - C.
-  - Ramos
-  - R.
-  - Kikkawa
-  - T.
-  - "Mi\u010Dica"
-  - M.
-  - Saitoh
-  - E.
-  - Sinova
-  - J.
-  - "Jaffr\xE8s"
-  - H.
-  - Mangeney
-  - J.
-  - Goennenwein
-  - S. T. B.
-  - "Gepr\xE4gs"
-  - S.
-  - Kampfrath
-  - T.
-  - "Kl\xE4ui"
-  - M.
-  - Bargheer
-  - M.
-  - <b>Seifert
-  - T. S.</b>
-  - Dhillon
-  - S.
-  - Lebrun
-  - R.
-  publisher: 2023 48th International Conference on Infrared, Millimeter, and Terahertz
-    Waves (IRMMW-THz) (2023)
-  date: '2023-01-01'
-  link: https://doi.org/10.1109/irmmw-thz57677.2023.10299196
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -970,37 +916,53 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1103/physrevb.106.144427
-  title: Laser-induced terahertz spin transport in magnetic nanostructures arises
-    from the same force as ultrafast demagnetization
+- id: arxiv:2205.11965
+  title: Emission of coherent THz magnons in an antiferromagnetic insulator triggered
+    by ultrafast spin-phonon interactions
   authors:
-  - Rouzegar
-  - Reza
-  - Brandt
-  - Liane
-  - "N\xE1dvorn\xEDk"
-  - "Luk\xE1\u0161"
-  - Reiss
-  - David A.
-  - Chekhov
-  - Alexander L.
+  - Rongione
+  - E.
   - Gueckstock
-  - Oliver
-  - In
-  - Chihun
-  - Wolf
-  - Martin
-  - <b>Seifert
-  - Tom S.</b>
-  - Brouwer
-  - Piet W.
-  - Woltersdorf
-  - Georg
+  - O.
+  - Mattern
+  - M.
+  - Gomonay
+  - O.
+  - Meer
+  - H.
+  - Schmitt
+  - C.
+  - Ramos
+  - R.
+  - Saitoh
+  - E.
+  - Sinova
+  - J.
+  - "Jaffr\xE8s"
+  - H.
+  - "Mi\u010Dica"
+  - M.
+  - Mangeney
+  - J.
+  - Goennenwein
+  - S. T. B.
+  - "Gepr\xE4gs"
+  - S.
   - Kampfrath
-  - Tobias
-  publisher: Physical Review B (2022)
+  - T.
+  - "Kl\xE4ui"
+  - M.
+  - Bargheer
+  - M.
+  - <b>Seifert
+  - T. S.</b>
+  - Dhillon
+  - S.
+  - Lebrun
+  - R.
+  publisher: Nature Communications (2022)
   date: '2022-01-01'
-  link: https://doi.org/10.1103/physrevb.106.144427
+  link: https://arxiv.org/abs/2205.11965
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1389,6 +1351,41 @@
   publisher: Appl. Phys. Lett. 120, (2021)
   date: '2021-01-01'
   link: https://doi.org/10.1063/5.0080357
+  year: '2021'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: arxiv:2103.11710
+  title: Laser-induced terahertz spin transport in magnetic nanostructures arises
+    from the same force as ultrafast demagnetization
+  authors:
+  - Rouzegar
+  - R.
+  - Brandt
+  - L.
+  - Nadvornik
+  - L.
+  - Reiss
+  - D. A.
+  - Chekhov
+  - A. L.
+  - Gueckstock
+  - O.
+  - In
+  - C.
+  - Wolf
+  - M.
+  - <b>Seifert
+  - T. S.</b>
+  - Brouwer
+  - P. W.
+  - Woltersdorf
+  - G.
+  - Kampfrath
+  - T.
+  publisher: Physical Review B (2021)
+  date: '2021-01-01'
+  link: https://arxiv.org/abs/2103.11710
   year: '2021'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1973,7 +1970,7 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1142/s2010324717400100
+- id: doi:10.1142/S2010324717400100
   title: Terahertz spin currents and inverse spin Hall effect in thin-film heterostructures
     containing complex magnetic compounds
   authors:
@@ -2000,7 +1997,7 @@
   - "Anad\xF3n"
   - A.
   - "K\xF6rner"
-  - H. S.
+  - H.
   - Walowski
   - J.
   - Back
@@ -2023,9 +2020,9 @@
   - I.
   - Kampfrath
   - T.
-  publisher: SPIN (2017)
+  publisher: SPIN, Volume 07, Issue 03, September (2017)
   date: '2017-01-01'
-  link: https://doi.org/10.1142/s2010324717400100
+  link: https://doi.org/10.1142/S2010324717400100
   year: '2017'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
