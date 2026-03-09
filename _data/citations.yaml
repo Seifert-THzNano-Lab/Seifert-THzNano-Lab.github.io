@@ -155,6 +155,23 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: url:https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
+  title: Ultrafast electron heating as the dominant driving force of photoinduced
+    terahertz spin currents
+  authors:
+  - R Rouzegar
+  - P Jimenez-Cavero
+  - O Gueckstock
+  - MA Wahada
+  - Q Remy
+  - '...'
+  publisher: arXiv preprint arXiv:2507. (2025)
+  date: '2025-01-01'
+  link: https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
+  year: '2025'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: url:https://google.com/search?q=Terahertz%20switching%20of%20antiferromagnetic%20order%20by%20N%5C%27eel%20spin-orbit%20torques
   title: Terahertz switching of antiferromagnetic order by N\'eel spin-orbit torques
   authors:
@@ -226,23 +243,6 @@
   publisher: arXiv preprint arXiv:2507. (2025)
   date: '2025-01-01'
   link: https://google.com/search?q=Femtosecond%20photocurrents%20by%20the%20Dresselhaus%20bulk%20spin-galvanic%20effect%20in%20an%20inversion-asymmetric%20ferromagnet
-  year: '2025'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: url:https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
-  title: Ultrafast electron heating as the dominant driving force of photoinduced
-    terahertz spin currents
-  authors:
-  - R Rouzegar
-  - P Jimenez-Cavero
-  - O Gueckstock
-  - MA Wahada
-  - Q Remy
-  - '...'
-  publisher: arXiv preprint arXiv:2507. (2025)
-  date: '2025-01-01'
-  link: https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
