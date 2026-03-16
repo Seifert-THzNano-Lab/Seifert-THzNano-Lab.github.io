@@ -45,6 +45,24 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: url:https://google.com/search?q=Controlling%20Terahertz%20Spintronic%20Photocurrents%20in%202D-Semiconductor%7C%20Ferromagnet%20Heterostructures%20through%20a%20Functional%20Hybrid%20Interface
+  title: Controlling Terahertz Spintronic Photocurrents in 2D-Semiconductor| Ferromagnet
+    Heterostructures through a Functional Hybrid Interface
+  authors:
+  - A Alostaz
+  - R Rouzegar
+  - E Harris-Lee
+  - X Chen
+  - S Wang
+  - KEJ Goh
+  - '...'
+  publisher: arXiv preprint arXiv:2603. (2026)
+  date: '2026-01-01'
+  link: https://google.com/search?q=Controlling%20Terahertz%20Spintronic%20Photocurrents%20in%202D-Semiconductor%7C%20Ferromagnet%20Heterostructures%20through%20a%20Functional%20Hybrid%20Interface
+  year: '2026'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: url:https://google.com/search?q=Spatiotemporal%20Terahertz%20Emission%20Nanoscopy%20of%20Spintronic%20Photocurrents
   title: Spatiotemporal Terahertz Emission Nanoscopy of Spintronic Photocurrents
   authors:
@@ -155,6 +173,23 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: url:https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
+  title: Ultrafast electron heating as the dominant driving force of photoinduced
+    terahertz spin currents
+  authors:
+  - R Rouzegar
+  - P Jimenez-Cavero
+  - O Gueckstock
+  - MA Wahada
+  - Q Remy
+  - '...'
+  publisher: arXiv preprint arXiv:2507. (2025)
+  date: '2025-01-01'
+  link: https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
+  year: '2025'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: url:https://google.com/search?q=Terahertz%20switching%20of%20antiferromagnetic%20order%20by%20N%5C%27eel%20spin-orbit%20torques
   title: Terahertz switching of antiferromagnetic order by N\'eel spin-orbit torques
   authors:
@@ -226,23 +261,6 @@
   publisher: arXiv preprint arXiv:2507. (2025)
   date: '2025-01-01'
   link: https://google.com/search?q=Femtosecond%20photocurrents%20by%20the%20Dresselhaus%20bulk%20spin-galvanic%20effect%20in%20an%20inversion-asymmetric%20ferromagnet
-  year: '2025'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: url:https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
-  title: Ultrafast electron heating as the dominant driving force of photoinduced
-    terahertz spin currents
-  authors:
-  - R Rouzegar
-  - P Jimenez-Cavero
-  - O Gueckstock
-  - MA Wahada
-  - Q Remy
-  - '...'
-  publisher: arXiv preprint arXiv:2507. (2025)
-  date: '2025-01-01'
-  link: https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1982,7 +2000,7 @@
   - M.
   - Kampfrath
   - T.
-  publisher: ' (2017)'
+  publisher: Nature communications (2017)
   date: '2017-01-01'
   link: https://doi.org/10.1038/s41467-018-05135-2
   year: '2017'
