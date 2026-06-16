@@ -31,7 +31,7 @@
 
   .news-sidebar-clean {
     flex: 0 0 280px;
-    border-left: 2px solid #eee;
+    border-left: 2px solid var(--light-gray);
     padding-left: 25px;
     margin-top: 60px;
   }
@@ -40,7 +40,7 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #999;
+    color: var(--gray);
     font-weight: 700;
     margin-bottom: 15px;
     display: block;
@@ -50,35 +50,26 @@
 
   .news-date {
     font-size: 0.75rem;
-    color: #888;
+    color: var(--gray);
     margin-bottom: 2px;
   }
 
   .news-link {
     font-size: 0.95rem;
     font-weight: 600;
+    color: var(--text);
     opacity: 0.7;
-    /*color: #333;  Dark Link */
     text-decoration: none;
     line-height: 1.3;
     display: block;
   }
 
-  .news-link:hover { color: #3c638dff; }
+  .news-link:hover { color: var(--primary); opacity: 1; }
 
-  /* --- DARK MODE OVERRIDES --- */
-  /* Heading and lead text use var(--text), so they follow the site's
-     light/dark toggle automatically and need no override here. */
-  @media (prefers-color-scheme: dark) {
-    /* Make the sidebar border subtle in dark mode */
-    .news-sidebar-clean { border-left-color: #444 !important; }
-    
-    /* Make links light so they are visible */
-    .news-link { color: #e0e0e0 !important; }
-    
-    /* Lighter blue for hover so it pops against black */
-    .news-link:hover { color: #66b3ff !important; }
-  }
+  /* All colors above use theme variables (var(--text), var(--gray),
+     var(--light-gray), var(--primary)), so they follow the site's
+     light/dark toggle automatically — no prefers-color-scheme override
+     needed (which wouldn't match the [data-dark] toggle anyway). */
 
   /* MOBILE: Stack them vertically */
   @media (max-width: 850px) {
@@ -89,14 +80,10 @@
     .news-sidebar-clean {
       width: 100%;
       border-left: none;
-      border-top: 2px solid #eee;
+      border-top: 2px solid var(--light-gray);
       padding-left: 0;
       padding-top: 25px;
       margin-top: 0;
-    }
-    /* Dark mode fix for mobile border */
-    @media (prefers-color-scheme: dark) {
-        .news-sidebar-clean { border-top-color: #444 !important; }
     }
   }
 </style>
@@ -123,10 +110,10 @@
     {% endfor %}
     
     {% if site.posts.size == 0 %}
-      <p style="font-size:0.8rem; color:#999;">No news updates yet.</p>
+      <p style="font-size:0.8rem; color:var(--gray);">No news updates yet.</p>
     {% endif %}
 
-    <a href="{{ '/news/' | relative_url }}" style="font-size: 0.85rem; color: #666; text-decoration: underline;">
+    <a href="{{ '/news/' | relative_url }}" style="font-size: 0.85rem; color: var(--dark-gray); text-decoration: underline;">
       All updates &rarr;
     </a>
   </div>
