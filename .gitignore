@@ -1,5 +1,6 @@
 _site
 _cite/.cache
+.idea
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
