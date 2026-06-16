@@ -51,6 +51,15 @@ plugins:
   - jekyll-feed
   - jekyll-last-modified-at
 
+# jekyll-spaceship: override the MathJax processor's script sources to drop
+# the compromised polyfill.io (hijacked in 2024 to serve malware). MathJax 3
+# runs fine without it on modern browsers. Arrays are replaced, not merged,
+# so this fully removes the polyfill.io <script> from generated pages.
+jekyll-spaceship:
+  mathjax-processor:
+    src:
+      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 # code block syntax highlighting
 highlighter: rouge
 
