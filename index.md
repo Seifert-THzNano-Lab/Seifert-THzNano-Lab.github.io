@@ -20,13 +20,13 @@
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #222; /* Dark Text */
+    color: var(--text); /* theme-aware: follows the light/dark toggle */
   }
 
   .intro-text-box p.lead {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #444;
+    color: var(--text);
   }
 
   .news-sidebar-clean {
@@ -66,11 +66,10 @@
 
   .news-link:hover { color: #3c638dff; }
 
-  /* --- DARK MODE OVERRIDES (The Fix) --- */
+  /* --- DARK MODE OVERRIDES --- */
+  /* Heading and lead text use var(--text), so they follow the site's
+     light/dark toggle automatically and need no override here. */
   @media (prefers-color-scheme: dark) {
-    .intro-text-box h2 { color: #f0f0f0 !important; }
-    .intro-text-box p.lead { color: #d0d0d0 !important; }
-    
     /* Make the sidebar border subtle in dark mode */
     .news-sidebar-clean { border-left-color: #444 !important; }
     
