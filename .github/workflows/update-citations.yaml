@@ -86,16 +86,34 @@ jobs:
           commit_message: "Update citations"
 
       - name: Open pull request with updated citations
+        id: cpr
         if: |
           github.event.action != 'closed' &&
           steps.changed.outputs.files_changed == 'true' &&
           inputs.open-pr == true
         uses: peter-evans/create-pull-request@v6
         with:
+          # PAT is required for the eventual merge to trigger the deploy
+          # workflow; falls back to the built-in token if no PAT is set.
+          token: ${{ secrets.PAT || github.token }}
           branch: citation-update
           title: Periodic citation update
           body: |
-            To see a live preview of this PR, close (don't merge) and reopen it.
+            Automated citation update. Auto-merge is enabled; this PR will
+            merge and deploy automatically once checks pass.
+
+      - name: Enable auto-merge for citation pull request
+        if: |
+          github.event.action != 'closed' &&
+          steps.changed.outputs.files_changed == 'true' &&
+          inputs.open-pr == true &&
+          steps.cpr.outputs.pull-request-number != ''
+        # Don't fail the run if auto-merge can't be enabled yet (e.g. repo
+        # settings not configured); the PR still opens for manual merge.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.PAT || github.token }}
+        run: gh pr merge --merge --auto "${{ steps.cpr.outputs.pull-request-number }}"
 
     outputs:
       changed: ${{ steps.changed.outputs.files_changed || false }}
