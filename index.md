@@ -15,7 +15,7 @@
   .intro-text-box { flex: 1; }
 
   /* Default Colors (Light Mode) */
-  .intro-text-box h1 {
+  .intro-text-box h2 {
     margin-top: 0;
     font-size: 2.2rem;
     font-weight: 700;
@@ -57,7 +57,7 @@
   .news-link {
     font-size: 0.95rem;
     font-weight: 600;
-    opacity: 0.7
+    opacity: 0.7;
     /*color: #333;  Dark Link */
     text-decoration: none;
     line-height: 1.3;
@@ -68,7 +68,7 @@
 
   /* --- DARK MODE OVERRIDES (The Fix) --- */
   @media (prefers-color-scheme: dark) {
-    .intro-text-box h1 { color: #f0f0f0 !important; }
+    .intro-text-box h2 { color: #f0f0f0 !important; }
     .intro-text-box p.lead { color: #d0d0d0 !important; }
     
     /* Make the sidebar border subtle in dark mode */
@@ -106,7 +106,7 @@
   
   <div class="intro-text-box">
     <h2>Our research vision</h2>
-    <p align="center" style="font-size: 1.2em; opacity: 0.7; margin-bottom: 30px;">
+    <p class="lead" align="center" style="font-size: 1.2em; opacity: 0.7; margin-bottom: 30px;">
       We explore the ultrafast dynamics of spins and magnetism, harnessing terahertz fields to control quantum magnets at the nanoscale. Our research pushes the boundaries of spin‑orbitronics, turning femtosecond and nanometer phenomena into future applications. Check our <a href="{% link focus/index.md %}">focus projects</a> to learn more about our research.
     </p>
   </div>
@@ -144,7 +144,7 @@ We develop and use novel approaches for terahertz time-domain spectroscopy capab
 
 {%
   include button.html
-  link="research"
+  link="papers"
   text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
@@ -156,7 +156,7 @@ We develop and use novel approaches for terahertz time-domain spectroscopy capab
 {%
   include feature.html
   image="images/NATS_scheme.svg"
-  link="research"
+  link="papers"
   title="Our Research"
   text=text
 %}
@@ -167,7 +167,7 @@ We focus on magnetic materials and aim at gaining control over the ultrafast dyn
 
 {%
   include button.html
-  link="projects"
+  link="focus"
   text="Browse our focus projects"
   icon="fa-solid fa-arrow-right"
   flip=true
@@ -179,7 +179,7 @@ We focus on magnetic materials and aim at gaining control over the ultrafast dyn
 {%
   include feature.html
   image="images/projects.jpg"
-  link="projects"
+  link="focus"
   title="Our Projects"
   flip=true
   style="bare"
