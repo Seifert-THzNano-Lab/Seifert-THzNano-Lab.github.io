@@ -864,32 +864,21 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/irmmw-thz57677.2023.10299392
+- id: url:https://google.com/search?q=High-Power%20Operation%20of%20Spintronic%20Terahertz%20Emitters%20for%20THz-Field-Driven%20Scanning%20Probe%20Microscopy%20at%20MHz%20Repetition%20Rates
   title: High-Power Operation of Spintronic Terahertz Emitters for THz-Field-Driven
     Scanning Probe Microscopy at MHz Repetition Rates
   authors:
-  - Vaitsi
-  - Alkisti
-  - Sleziona
-  - Vivien
-  - "Lop\xE9z"
-  - Luis E. Parra
-  - <b>Seifert
-  - Tom S.</b>
-  - Schulz
-  - Fabian
-  - "Saban\xE9s"
-  - "Natalia Mart\xEDn"
-  - Wolf
-  - Martin
-  - Kampfrath
-  - Tobias
-  - "M\xFCller"
-  - Melanie
-  publisher: 2023 48th International Conference on Infrared, Millimeter, and Terahertz
-    Waves (IRMMW-THz) (2023)
+  - A Vaitsi
+  - V Sleziona
+  - "LEP Lop\xE9z"
+  - TS Seifert
+  - F Schulz
+  - "NM Saban\xE9s"
+  - '...'
+  publisher: "2023 48th International Conference on Infrared, Millimeter, and Terahertz\
+    \ \u2026 (2023)"
   date: '2023-01-01'
-  link: https://doi.org/10.1109/irmmw-thz57677.2023.10299392
+  link: https://google.com/search?q=High-Power%20Operation%20of%20Spintronic%20Terahertz%20Emitters%20for%20THz-Field-Driven%20Scanning%20Probe%20Microscopy%20at%20MHz%20Repetition%20Rates
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
