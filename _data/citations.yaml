@@ -181,6 +181,23 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: url:https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
+  title: Ultrafast electron heating as the dominant driving force of photoinduced
+    terahertz spin currents
+  authors:
+  - R Rouzegar
+  - P Jimenez-Cavero
+  - O Gueckstock
+  - MA Wahada
+  - Q Remy
+  - '...'
+  publisher: arXiv preprint arXiv:2507. (2025)
+  date: '2025-01-01'
+  link: https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
+  year: '2025'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1126/sciadv.adz6549
   title: Influence of atomic-scale defects on coherent phonon excitations by THz near
     fields in an STM
@@ -208,23 +225,6 @@
   publisher: Science Advances (2025)
   date: '2025-01-01'
   link: https://doi.org/10.1126/sciadv.adz6549
-  year: '2025'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: url:https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
-  title: Ultrafast electron heating as the dominant driving force of photoinduced
-    terahertz spin currents
-  authors:
-  - R Rouzegar
-  - P Jimenez-Cavero
-  - O Gueckstock
-  - MA Wahada
-  - Q Remy
-  - '...'
-  publisher: arXiv preprint arXiv:2507. (2025)
-  date: '2025-01-01'
-  link: https://google.com/search?q=Ultrafast%20electron%20heating%20as%20the%20dominant%20driving%20force%20of%20photoinduced%20terahertz%20spin%20currents
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -363,6 +363,43 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1103/physrevlett.132.226703
+  title: Accessing ultrafast spin-transport dynamics in copper using broadband terahertz
+    spectroscopy
+  authors:
+  - "Jechumt\xE1l"
+  - "Ji\u0159\xED"
+  - Rouzegar
+  - Reza
+  - Gueckstock
+  - Oliver
+  - Denker
+  - Christian
+  - Hoppe
+  - Wolfgang
+  - Remy
+  - Quentin
+  - <b>Seifert
+  - "Tom\u2009S.</b>"
+  - "Kuba\u0161\u010D\xEDk"
+  - Peter
+  - Woltersdorf
+  - Georg
+  - Brouwer
+  - Piet W.
+  - "M\xFCnzenberg"
+  - Markus
+  - Kampfrath
+  - Tobias
+  - "N\xE1dvorn\xEDk"
+  - "Luk\xE1\u0161"
+  publisher: Physical Review Letters (2024)
+  date: '2024-01-01'
+  link: https://doi.org/10.1103/physrevlett.132.226703
+  year: '2024'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1021/acs.nanolett.4c00498.s001
   title: 'Terahertz Spin-Conductance Spectroscopy: Probing Coherent and Incoherent
     Ultrafast Spin Tunneling'
@@ -371,6 +408,37 @@
   publisher: Nano Letters (2024)
   date: '2024-01-01'
   link: https://doi.org/10.1021/acs.nanolett.4c00498.s001
+  year: '2024'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1063/5.0214469
+  title: Rotating spintronic terahertz emitter optimized for microjoule pump-pulse
+    energies and megahertz repetition rates
+  authors:
+  - Vaitsi
+  - Alkisti
+  - Sleziona
+  - Vivien
+  - "Parra L\xF3pez"
+  - Luis E.
+  - Behovits
+  - Yannic
+  - Schulz
+  - Fabian
+  - "Mart\xEDn Saban\xE9s"
+  - Natalia
+  - Kampfrath
+  - Tobias
+  - Wolf
+  - Martin
+  - <b>Seifert
+  - Tom S.</b>
+  - "M\xFCller"
+  - Melanie
+  publisher: Applied Physics Letters (2024)
+  date: '2024-01-01'
+  link: https://doi.org/10.1063/5.0214469
   year: '2024'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -423,51 +491,31 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1063/5.0214469
-  title: Rotating spintronic terahertz emitter optimized for microjoule pump-pulse
-    energies and megahertz repetition rates
-  authors:
-  - Vaitsi
-  - Alkisti
-  - Sleziona
-  - Vivien
-  - "Parra L\xF3pez"
-  - Luis E.
-  - Behovits
-  - Yannic
-  - Schulz
-  - Fabian
-  - "Mart\xEDn Saban\xE9s"
-  - Natalia
-  - Kampfrath
-  - Tobias
-  - Wolf
-  - Martin
-  - <b>Seifert
-  - Tom S.</b>
-  - "M\xFCller"
-  - Melanie
-  publisher: Applied Physics Letters (2024)
-  date: '2024-01-01'
-  link: https://doi.org/10.1063/5.0214469
-  year: '2024'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: url:https://google.com/search?q=Tunable%20ultrabroadband%20hybrid%20terahertz%20emitter%20combining%20a%20spintronic%20and%20a%20GaSe%20source
+- id: doi:10.1063/5.0226564
   title: Tunable ultrabroadband hybrid terahertz emitter combining a spintronic and
     a GaSe source
   authors:
-  - A Alostaz
-  - O Gueckstock
-  - J Tong
-  - J Kredl
-  - C In
-  - "M M\xFCnzenberg"
-  - '...'
+  - Alostaz
+  - Afnan
+  - Gueckstock
+  - Oliver
+  - Tong
+  - Junwei
+  - Kredl
+  - Jana
+  - In
+  - Chihun
+  - "M\xFCnzenberg"
+  - Markus
+  - Schneider
+  - Claus M.
+  - Kampfrath
+  - Tobias
+  - <b>Seifert
+  - Tom S.</b>
   publisher: Applied Physics Letters (2024)
   date: '2024-01-01'
-  link: https://google.com/search?q=Tunable%20ultrabroadband%20hybrid%20terahertz%20emitter%20combining%20a%20spintronic%20and%20a%20GaSe%20source
+  link: https://doi.org/10.1063/5.0226564
   year: '2024'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -614,7 +662,7 @@
   - Yuriy
   - Kampfrath
   - Tobias
-  publisher: Nature Nanotechnology (2023) (2023)
+  publisher: Nature Nanotechnology (2023)
   date: '2023-01-01'
   link: https://doi.org/10.1038/s41565-023-01470-8
   year: '2023'
@@ -656,6 +704,60 @@
   publisher: Physical Review Applied (2023)
   date: '2023-01-01'
   link: https://doi.org/10.1103/physrevapplied.19.034018
+  year: '2023'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1109/irmmw-thz57677.2023.10299196
+  title: "Emission of coherent THz magnons in an antiferromagnetic insulator triggered\
+    \ by ultrafast spin\u2013phonon interactions"
+  authors:
+  - Rongione
+  - E.
+  - Gueckstock
+  - O.
+  - Mattern
+  - M.
+  - Gomonay
+  - O.
+  - Meer
+  - H.
+  - Schmitt
+  - C.
+  - Ramos
+  - R.
+  - Kikkawa
+  - T.
+  - "Mi\u010Dica"
+  - M.
+  - Saitoh
+  - E.
+  - Sinova
+  - J.
+  - "Jaffr\xE8s"
+  - H.
+  - Mangeney
+  - J.
+  - Goennenwein
+  - S. T. B.
+  - "Gepr\xE4gs"
+  - S.
+  - Kampfrath
+  - T.
+  - "Kl\xE4ui"
+  - M.
+  - Bargheer
+  - M.
+  - <b>Seifert
+  - T. S.</b>
+  - Dhillon
+  - S.
+  - Lebrun
+  - R.
+  publisher: 2023 48th International Conference on Infrared, Millimeter, and Terahertz
+    Waves (IRMMW-THz) (2023)
+  date: '2023-01-01'
+  link: https://doi.org/10.1109/irmmw-thz57677.2023.10299196
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -737,106 +839,46 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: arxiv:2306.09734
+- id: doi:10.1103/physrevapplied.20.034037
   title: Broadband spintronic detection of the absolute field strength of terahertz
     electromagnetic pulses
   authors:
   - Chekhov
-  - A. L.
+  - A.L.
   - Behovits
   - Y.
   - Martens
   - U.
   - Serrano
-  - B. R.
+  - B.R.
   - Wolf
   - M.
   - <b>Seifert
-  - T. S.</b>
-  - Muenzenberg
+  - T.S.</b>
+  - "M\xFCnzenberg"
   - M.
   - Kampfrath
   - T.
   publisher: Physical Review Applied (2023)
   date: '2023-01-01'
-  link: https://arxiv.org/abs/2306.09734
+  link: https://doi.org/10.1103/physrevapplied.20.034037
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: arxiv:2305.01365
+- id: url:https://google.com/search?q=Fiber-tip%20spintronic%20terahertz%20emitters
   title: Fiber-tip spintronic terahertz emitters
   authors:
-  - Paries
-  - Felix
-  - Tiercelin
-  - Nicolas
-  - Lezier
-  - Geoffrey
-  - Vanwolleghem
-  - Mathias
-  - Selz
-  - Felix
-  - Syskaki
-  - Maria-Andromachi
-  - Kammerbauer
-  - Fabian
-  - Jakob
-  - Gerhard
-  - Jourdan
-  - Martin
-  - "Kl\xC4ui"
-  - Mathias
-  - Kaspar
-  - Zdenek
-  - Kampfrath
-  - Tobias
-  - <b>Seifert
-  - Tom S.</b>
-  - Freymann
-  - Georg Von
-  - Molter
-  - Daniel
+  - F Paries
+  - N Tiercelin
+  - G Lezier
+  - M Vanwolleghem
+  - F Selz
+  - MA Syskaki
+  - '...'
   publisher: Optics express (2023)
   date: '2023-01-01'
-  link: https://arxiv.org/abs/2305.01365
-  year: '2023'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1103/PhysRevLett.132.226703
-  title: Accessing ultrafast spin-transport dynamics in copper using broadband terahertz
-    spectroscopy
-  authors:
-  - "Jechumt\xE1l"
-  - "Ji\u0159\xED"
-  - Rouzegar
-  - Reza
-  - Gueckstock
-  - Oliver
-  - Denker
-  - Christian
-  - Hoppe
-  - Wolfgang
-  - Remy
-  - Quentin
-  - <b>Seifert
-  - Tom S.</b>
-  - "Kuba\u0161\u010D\xEDk"
-  - Peter
-  - Woltersdorf
-  - Georg
-  - Brouwer
-  - Piet W.
-  - "M\xFCnzenberg"
-  - Markus
-  - Kampfrath
-  - Tobias
-  - "N\xE1dvorn\xEDk"
-  - "Luk\xE1\u0161"
-  publisher: Physical Review Letters (2023)
-  date: '2023-01-01'
-  link: https://doi.org/10.1103/PhysRevLett.132.226703
+  link: https://google.com/search?q=Fiber-tip%20spintronic%20terahertz%20emitters
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -965,78 +1007,69 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: arxiv:2205.11965
-  title: Emission of coherent THz magnons in an antiferromagnetic insulator triggered
-    by ultrafast spin-phonon interactions
+- id: doi:10.1063/5.0080357
+  title: Spintronic sources of ultrashort terahertz electromagnetic pulses
   authors:
-  - Rongione
-  - E.
-  - Gueckstock
-  - O.
-  - Mattern
-  - M.
-  - Gomonay
-  - O.
-  - Meer
-  - H.
-  - Schmitt
-  - C.
-  - Ramos
-  - R.
-  - Saitoh
-  - E.
-  - Sinova
-  - J.
-  - "Jaffr\xE8s"
-  - H.
-  - "Mi\u010Dica"
-  - M.
-  - Mangeney
-  - J.
-  - Goennenwein
-  - S. T. B.
-  - "Gepr\xE4gs"
-  - S.
-  - Kampfrath
-  - T.
-  - "Kl\xE4ui"
-  - M.
-  - Bargheer
-  - M.
   - <b>Seifert
-  - T. S.</b>
-  - Dhillon
-  - S.
-  - Lebrun
-  - R.
-  publisher: Nature Communications (2022)
+  - Tom S.</b>
+  - Cheng
+  - Liang
+  - Wei
+  - Zhengxing
+  - Kampfrath
+  - Tobias
+  - Qi
+  - Jingbo
+  publisher: Applied Physics Letters (2022)
   date: '2022-01-01'
-  link: https://arxiv.org/abs/2205.11965
+  link: https://doi.org/10.1063/5.0080357
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1021/acs.nanolett.2c00980
-  title: Electron paramagnetic resonance of alkali metal atoms and dimers on ultrathin
-    MgO
+- id: doi:10.1103/physrevb.106.144427
+  title: Laser-induced terahertz spin transport in magnetic nanostructures arises
+    from the same force as ultrafast demagnetization
   authors:
-  - Kovarik
-  - Stepan
-  - Robles
-  - Roberto
-  - Schlitz
-  - Richard
+  - Rouzegar
+  - Reza
+  - Brandt
+  - Liane
+  - "N\xE1dvorn\xEDk"
+  - "Luk\xE1\u0161"
+  - Reiss
+  - David A.
+  - Chekhov
+  - Alexander L.
+  - Gueckstock
+  - Oliver
+  - In
+  - Chihun
+  - Wolf
+  - Martin
   - <b>Seifert
-  - Tom Sebastian</b>
-  - Lorente
-  - Nicolas
-  - Gambardella
-  - Pietro
-  - Stepanow
-  - Sebastian
-  publisher: Nano Letters (2022)
+  - Tom S.</b>
+  - Brouwer
+  - Piet W.
+  - Woltersdorf
+  - Georg
+  - Kampfrath
+  - Tobias
+  publisher: Physical Review B (2022)
   date: '2022-01-01'
-  link: https://doi.org/10.1021/acs.nanolett.2c00980
+  link: https://doi.org/10.1103/physrevb.106.144427
+  year: '2022'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1021/acs.nanolett.2c00980.s002
+  title: 'Supplementary information: Electron paramagnetic resonance of alkali metal
+    atoms and dimers on ultrathin MgO'
+  authors:
+  - ''
+  publisher: American Chemical Society (2022)
+  date: '2022-01-01'
+  link: https://doi.org/10.1021/acs.nanolett.2c00980.s002
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1117,9 +1150,108 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: arxiv:2208.00846
-  title: Terahertz spin-to-charge current conversion in stacks of ferromagnets and
-    the transition-metal dichalcogenide NbSe$_2$
+- id: doi:10.1364/oe.453539
+  title: Average power scaling of THz spintronic emitters efficiently cooled in reflection
+    geometry
+  authors:
+  - Vogel
+  - Tim
+  - Omar
+  - Alan
+  - Mansourzadeh
+  - Samira
+  - Wulf
+  - Frank
+  - "Saban\xE9s"
+  - "Natalia Mart\xEDn"
+  - "M\xFCller"
+  - Melanie
+  - <b>Seifert
+  - Tom S.</b>
+  - Weigel
+  - Alexander
+  - Jakob
+  - Gerhard
+  - "Kl\xE4ui"
+  - Mathias
+  - Pupeza
+  - Ioachim
+  - Kampfrath
+  - Tobias
+  - Saraceno
+  - Clara J.
+  publisher: Optics Express (2022)
+  date: '2022-01-01'
+  link: https://doi.org/10.1364/oe.453539
+  year: '2022'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1063/5.0080308
+  title: Spin-voltage-driven efficient terahertz spin currents from the magnetic Weyl
+    semimetals Co2MnGa and Co2MnAl
+  authors:
+  - Bierhance
+  - Genaro
+  - Markou
+  - Anastasios
+  - Gueckstock
+  - Oliver
+  - Rouzegar
+  - Reza
+  - Behovits
+  - Yannic
+  - Chekhov
+  - Alexander L.
+  - Wolf
+  - Martin
+  - <b>Seifert
+  - Tom S.</b>
+  - Felser
+  - Claudia
+  - Kampfrath
+  - Tobias
+  publisher: Applied Physics Letters (2022)
+  date: '2022-01-01'
+  link: https://doi.org/10.1063/5.0080308
+  year: '2022'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1063/5.0077868
+  title: Impact of gigahertz and terahertz transport regimes on spin propagation and
+    conversion in the antiferromagnet IrMn
+  authors:
+  - Gueckstock
+  - O.
+  - Seeger
+  - R. L.
+  - <b>Seifert
+  - T. S.</b>
+  - Auffret
+  - S.
+  - Gambarelli
+  - S.
+  - Kirchhof
+  - J. N.
+  - Bolotin
+  - K. I.
+  - Baltz
+  - V.
+  - Kampfrath
+  - T.
+  - "N\xE1dvorn\xEDk"
+  - L.
+  publisher: Applied Physics Letters (2022)
+  date: '2022-01-01'
+  link: https://doi.org/10.1063/5.0077868
+  year: '2022'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1002/admi.202201675
+  title: "Terahertz Spin\u2010to\u2010Charge Current Conversion in Stacks of Ferromagnets\
+    \ and the Transition\u2010Metal Dichalcogenide NbSe2"
   authors:
   - "N\xE1dvorn\xEDk"
   - "Luk\xE1\u0161"
@@ -1137,6 +1269,8 @@
   - Gisela
   - Takagi
   - Hidenori
+  - Zeer
+  - Mahmoud
   - <b>Seifert
   - Tom S.</b>
   - "Kuba\u0161\u010D\xEDk"
@@ -1147,7 +1281,7 @@
   - Abdelmadjid
   - Yang
   - Heejun
-  - Bedoya-Pinto
+  - "Bedoya\u2010Pinto"
   - Amilcar
   - Parkin
   - Stuart S. P.
@@ -1161,7 +1295,7 @@
   - Tobias
   publisher: Advanced Materials Interfaces (2022)
   date: '2022-01-01'
-  link: https://arxiv.org/abs/2208.00846
+  link: https://doi.org/10.1002/admi.202201675
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1296,73 +1430,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1021/acs.nanolett.2c00980.s002
-  title: 'Supplementary information: Electron paramagnetic resonance of alkali metal
-    atoms and dimers on ultrathin MgO'
-  authors:
-  - ''
-  publisher: American Chemical Society (2022)
-  date: '2022-01-01'
-  link: https://doi.org/10.1021/acs.nanolett.2c00980.s002
-  year: '2022'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1063/5.0080357
-  title: Spintronic Sources of Ultrashort Terahertz Electromagnetic Pulses
-  authors:
-  - <b>Seifert
-  - Tom S.</b>
-  - Cheng
-  - Liang
-  - Wei
-  - Zhengxing
-  - Kampfrath
-  - Tobias
-  - Qi
-  - Jingbo
-  publisher: Appl. Phys. Lett. 120, (2021)
-  date: '2021-01-01'
-  link: https://doi.org/10.1063/5.0080357
-  year: '2021'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2103.11710
-  title: Laser-induced terahertz spin transport in magnetic nanostructures arises
-    from the same force as ultrafast demagnetization
-  authors:
-  - Rouzegar
-  - R.
-  - Brandt
-  - L.
-  - Nadvornik
-  - L.
-  - Reiss
-  - D. A.
-  - Chekhov
-  - A. L.
-  - Gueckstock
-  - O.
-  - In
-  - C.
-  - Wolf
-  - M.
-  - <b>Seifert
-  - T. S.</b>
-  - Brouwer
-  - P. W.
-  - Woltersdorf
-  - G.
-  - Kampfrath
-  - T.
-  publisher: Physical Review B (2021)
-  date: '2021-01-01'
-  link: https://arxiv.org/abs/2103.11710
-  year: '2021'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1002/adma.202006281
   title: Terahertz spin-to-charge conversion by interfacial skew scattering in magnetic
     metal bilayers
@@ -1435,74 +1502,26 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1364/OE.453539
-  title: Average power scaling of THz spintronic emitters in reflection geometry
+- id: url:https://google.com/search?q=Frequency%E2%80%90Independent%20Terahertz%20Anomalous%20Hall%20Effect%20in%20DyCo5%2C%20Co32Fe68%2C%20and%20Gd27Fe73%20Thin%20Films%20from%20DC%20to%2040%20THz
+  title: "Frequency\u2010Independent Terahertz Anomalous Hall Effect in DyCo5, Co32Fe68,\
+    \ and Gd27Fe73 Thin Films from DC to 40 THz"
   authors:
-  - Vogel
-  - Tim
-  - Omar
-  - Alan
-  - Mansourzadeh
-  - Samira
-  - Wulf
-  - Frank
-  - "Saban\xE9s"
-  - "Natalia Mart\xEDn"
-  - "M\xFCller"
-  - Melanie
-  - <b>Seifert
-  - Tom S.</b>
-  - Weigel
-  - Alexander
-  - Jakob
-  - Gerhard
-  - "Kl\xE4ui"
-  - Mathias
-  - Pupeza
-  - Ioachim
-  - Kampfrath
-  - Tobias
-  - Saraceno
-  - Clara J.
-  publisher: Optics Express (2021)
+  - TS Seifert
+  - U Martens
+  - F Radu
+  - M Ribow
+  - M Berritta
+  - "L N\xE1dvorn\xEDk"
+  - R Starke
+  - '...'
+  publisher: Advanced Materials (2021)
   date: '2021-01-01'
-  link: https://doi.org/10.1364/OE.453539
+  link: https://google.com/search?q=Frequency%E2%80%90Independent%20Terahertz%20Anomalous%20Hall%20Effect%20in%20DyCo5%2C%20Co32Fe68%2C%20and%20Gd27Fe73%20Thin%20Films%20from%20DC%20to%2040%20THz
   year: '2021'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1063/5.0080308
-  title: Spin-voltage-driven efficient terahertz spin currents from the magnetic Weyl
-    semimetals Co$_2$MnGa and Co$_2$MnAl
-  authors:
-  - Bierhance
-  - Genaro
-  - Markou
-  - Anastasios
-  - Gueckstock
-  - Oliver
-  - Rouzegar
-  - Reza
-  - Behovits
-  - Yannic
-  - Chekhov
-  - Alexander
-  - Wolf
-  - Martin
-  - <b>Seifert
-  - Tom S.</b>
-  - Felser
-  - Claudia
-  - Kampfrath
-  - Tobias
-  publisher: Applied Physics Letters (2021)
-  date: '2021-01-01'
-  link: https://doi.org/10.1063/5.0080308
-  year: '2021'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2111.05043
+- id: doi:10.1103/physrevresearch.3.043185
   title: Accurate measurement of atomic magnetic moments by minimizing the tip magnetic
     field in STM-based electron paramagnetic resonance
   authors:
@@ -1516,76 +1535,24 @@
   - Sebastian
   publisher: Physical Review Research (2021)
   date: '2021-01-01'
-  link: https://arxiv.org/abs/2111.05043
+  link: https://doi.org/10.1103/physrevresearch.3.043185
   year: '2021'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1063/5.0077868
-  title: Impact of gigahertz and terahertz transport regimes on spin propagation and
-    conversion in the antiferromagnet IrMn
+- id: url:https://google.com/search?q=Optically%20Gated%20Terahertz-Field-Driven%20Switching%20of%20Antiferromagnetic
+  title: Optically Gated Terahertz-Field-Driven Switching of Antiferromagnetic
   authors:
-  - Gueckstock
-  - Oliver
-  - Seeger
-  - Rafael L.
-  - <b>Seifert
-  - Tom S.</b>
-  - Auffret
-  - Stephane
-  - Gambarelli
-  - Serge
-  - Kirchhof
-  - Jan N.
-  - Bolotin
-  - Kirill I.
-  - Baltz
-  - Vincent
-  - Kampfrath
-  - Tobias
-  - "N\xE1dvorn\xEDk"
-  - "Luk\xE1\u0161"
-  publisher: Appl. Phys. Lett. 120, (2021)
-  date: '2021-01-01'
-  link: https://doi.org/10.1063/5.0077868
-  year: '2021'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2106.08828
-  title: Optically gated terahertz-field-driven switching of antiferromagnetic CuMnAs
-  authors:
-  - Heitz
-  - J. J. F.
-  - "N\xE1dvorn\xEDk"
-  - L.
-  - Balos
-  - V.
-  - Behovits
-  - Y.
-  - Chekhov
-  - A. L.
-  - <b>Seifert
-  - T. S.</b>
-  - "Olejn\xEDk"
-  - K.
-  - "Ka\u0161par"
-  - Z.
-  - Geishendorf
-  - K.
-  - "Nov\xE1k"
-  - V.
-  - Campion
-  - R. P.
-  - Wolf
-  - M.
-  - Jungwirth
-  - T.
-  - Kampfrath
-  - T.
+  - JJF Heitz
+  - "L N\xE1dvorn\xEDk"
+  - V Balos
+  - Y Behovits
+  - AL Chekhov
+  - TS Seifert
+  - '...'
   publisher: Physical Review Applied (2021)
   date: '2021-01-01'
-  link: https://arxiv.org/abs/2106.08828
+  link: https://google.com/search?q=Optically%20Gated%20Terahertz-Field-Driven%20Switching%20of%20Antiferromagnetic
   year: '2021'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1691,45 +1658,6 @@
   publisher: Nano letters (2020)
   date: '2020-01-01'
   link: https://doi.org/10.1021/acs.nanolett.7b04538.s001
-  year: '2020'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1002/adma.202007398
-  title: Frequency-independent terahertz anomalous Hall effect in DyCo$_{5}$, Co$_{32}$Fe$_{68}$
-    and Gd$_{27}$Fe$_{73}$ thin films from DC to 40 THz
-  authors:
-  - <b>Seifert
-  - Tom S.</b>
-  - Martens
-  - Ulrike
-  - Radu
-  - Florin
-  - Ribow
-  - Mirkow
-  - Berritta
-  - Marco
-  - "N\xE1dvorn\xEDk"
-  - Lukas
-  - Starke
-  - Ronald
-  - Jungwirth
-  - Tomas
-  - Wolf
-  - Martin
-  - Radu
-  - Ilie
-  - "M\xFCnzenberg"
-  - Markus
-  - Oppeneer
-  - Peter M.
-  - Woltersdorf
-  - Georg
-  - Kampfrath
-  - Tobias
-  publisher: Advanced Materials (2020)
-  date: '2020-01-01'
-  link: https://doi.org/10.1002/adma.202007398
   year: '2020'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1917,6 +1845,99 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1126/sciadv.aar3566
+  title: Terahertz electrical writing speed in an antiferromagnetic memory
+  authors:
+  - "Olejn\xEDk"
+  - Kamil
+  - <b>Seifert
+  - T</b>om
+  - "Ka\u0161par"
+  - "Zden\u011Bk"
+  - "Nov\xE1k"
+  - "V\xEDt"
+  - Wadley
+  - Peter
+  - Campion
+  - Richard P.
+  - Baumgartner
+  - Manuel
+  - Gambardella
+  - Pietro
+  - "N\u011Bmec"
+  - Petr
+  - Wunderlich
+  - Joerg
+  - Sinova
+  - Jairo
+  - "Ku\u017Eel"
+  - Petr
+  - "M\xFCller"
+  - Melanie
+  - Kampfrath
+  - Tobias
+  - Jungwirth
+  - Tomas
+  publisher: Science Advances (2018)
+  date: '2018-01-01'
+  link: https://doi.org/10.1126/sciadv.aar3566
+  year: '2018'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1038/s41467-018-05135-2
+  title: Femtosecond formation dynamics of the spin Seebeck effect revealed by terahertz
+    spectroscopy
+  authors:
+  - <b>Seifert
+  - Tom S.</b>
+  - Jaiswal
+  - Samridh
+  - Barker
+  - Joseph
+  - Weber
+  - Sebastian T.
+  - Razdolski
+  - Ilya
+  - Cramer
+  - Joel
+  - Gueckstock
+  - Oliver
+  - Maehrlein
+  - Sebastian F.
+  - Nadvornik
+  - Lukas
+  - Watanabe
+  - Shun
+  - Ciccarelli
+  - Chiara
+  - Melnikov
+  - Alexey
+  - Jakob
+  - Gerhard
+  - "M\xFCnzenberg"
+  - Markus
+  - Goennenwein
+  - Sebastian T. B.
+  - Woltersdorf
+  - Georg
+  - Rethfeld
+  - Baerbel
+  - Brouwer
+  - Piet W.
+  - Wolf
+  - Martin
+  - "Kl\xE4ui"
+  - Mathias
+  - Kampfrath
+  - Tobias
+  publisher: Nature Communications (2018)
+  date: '2018-01-01'
+  link: https://doi.org/10.1038/s41467-018-05135-2
+  year: '2018'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1088/1361-6463/aad536
   title: Terahertz spectroscopy for all-optical spintronic characterization of the
     spin-Hall-effect metals Pt, W and Cu80Ir20
@@ -1964,97 +1985,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: arxiv:1711.08444
-  title: THz electrical writing speed in an antiferromagnetic memory
-  authors:
-  - Olejnik
-  - K.
-  - <b>Seifert
-  - T.</b>
-  - Kaspar
-  - Z.
-  - Novak
-  - V.
-  - Wadley
-  - P.
-  - Campion
-  - R. P.
-  - Baumgartner
-  - M.
-  - Gambardella
-  - P.
-  - Nemec
-  - P.
-  - Wunderlich
-  - J.
-  - Sinova
-  - J.
-  - Muller
-  - M.
-  - Kampfrath
-  - T.
-  - Jungwirth
-  - T.
-  publisher: Science advances (2017)
-  date: '2017-01-01'
-  link: https://arxiv.org/abs/1711.08444
-  year: '2017'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1038/s41467-018-05135-2
-  title: Femtosecond formation dynamics of the spin Seebeck effect revealed by terahertz
-    spectroscopy
-  authors:
-  - <b>Seifert
-  - T. S.</b>
-  - Jaiswal
-  - S.
-  - Barker
-  - J.
-  - Weber
-  - S. T.
-  - Razdolski
-  - I.
-  - Cramer
-  - J.
-  - Gueckstock
-  - O.
-  - Maehrlein
-  - S.
-  - Nadvornik
-  - L.
-  - Watanabe
-  - S.
-  - Ciccarelli
-  - C.
-  - Melnikov
-  - A.
-  - Jakob
-  - G.
-  - "M\xFCnzenberg"
-  - M.
-  - Goennenwein
-  - S. T. B.
-  - Woltersdorf
-  - G.
-  - Rethfeld
-  - B.
-  - Brouwer
-  - P. W.
-  - Wolf
-  - M.
-  - "Kl\xE4ui"
-  - M.
-  - Kampfrath
-  - T.
-  publisher: Nature communications (2017)
-  date: '2017-01-01'
-  link: https://doi.org/10.1038/s41467-018-05135-2
-  year: '2017'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1063/1.4986755
   title: "Ultrabroadband single-cycle terahertz pulses with peak fields of 300 kV\
     \ cm\u2212 1 from a metallic spintronic emitter"
@@ -2082,7 +2012,7 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1142/S2010324717400100
+- id: doi:10.1142/s2010324717400100
   title: Terahertz spin currents and inverse spin Hall effect in thin-film heterostructures
     containing complex magnetic compounds
   authors:
@@ -2109,7 +2039,7 @@
   - "Anad\xF3n"
   - A.
   - "K\xF6rner"
-  - H.
+  - H. S.
   - Walowski
   - J.
   - Back
@@ -2132,9 +2062,9 @@
   - I.
   - Kampfrath
   - T.
-  publisher: SPIN, Volume 07, Issue 03, September (2017)
+  publisher: SPIN (2017)
   date: '2017-01-01'
-  link: https://doi.org/10.1142/S2010324717400100
+  link: https://doi.org/10.1142/s2010324717400100
   year: '2017'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -2163,55 +2093,20 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1038/nphoton.2016.91
+- id: url:https://google.com/search?q=Efficient%20metallic%20spintronic%20emitters%20of%20ultrabroadband%20terahertz%20radiation
   title: Efficient metallic spintronic emitters of ultrabroadband terahertz radiation
   authors:
-  - <b>Seifert
-  - T.</b>
-  - Jaiswal
-  - S.
-  - Martens
-  - U.
-  - Hannegan
-  - J.
-  - Braun
-  - L.
-  - Maldonado
-  - P.
-  - Freimuth
-  - F.
-  - Kronenberg
-  - A.
-  - Henrizi
-  - J.
-  - Radu
-  - I.
-  - Beaurepaire
-  - E.
-  - Mokrousov
-  - Y.
-  - Oppeneer
-  - P. M.
-  - Jourdan
-  - M.
-  - Jakob
-  - G.
-  - Turchinovich
-  - D.
-  - Hayden
-  - L. M.
-  - Wolf
-  - M.
-  - "M\xFCnzenberg"
-  - M.
-  - "Kl\xE4ui"
-  - M.
-  - Kampfrath
-  - T.
-  publisher: Nature Photonics 10, (2015)
-  date: '2015-01-01'
-  link: https://doi.org/10.1038/nphoton.2016.91
-  year: '2015'
+  - T Seifert
+  - S Jaiswal
+  - U Martens
+  - J Hannegan
+  - L Braun
+  - P Maldonado
+  - '...'
+  publisher: Nature photonics (2016)
+  date: '2016-01-01'
+  link: https://google.com/search?q=Efficient%20metallic%20spintronic%20emitters%20of%20ultrabroadband%20terahertz%20radiation
+  year: '2016'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
