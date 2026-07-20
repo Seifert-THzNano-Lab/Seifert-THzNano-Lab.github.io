@@ -3,6 +3,7 @@ name: Peer Liebermann
 image: images/People_liebermann.jpg
 role: undergrad
 group: alum
+description: "Master student, now looking for opportunities"
 links:
 
 ---

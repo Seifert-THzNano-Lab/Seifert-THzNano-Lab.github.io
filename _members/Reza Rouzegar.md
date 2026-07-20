@@ -3,6 +3,7 @@ name: Reza Rouzegar
 image: images/People_rouzegar.jpg
 role: postdoc
 group: alum
+description: "Postdoc, now at Zurich Instruments"
 links:
     home-page: https://scholar.google.com/citations?user=ahXcJxkAAAAJ&hl=en
     orcid: 0000-0002-3171-2196

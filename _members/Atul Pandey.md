@@ -2,7 +2,7 @@
 name: Atul Pandey
 image: images/people_pandey.jpg
 role: postdoc
-group: alum
+
 links:
     home-page: https://scholar.google.com/citations?user=A9gBrucAAAAJ&hl=en
     orcid: 0000-0002-5001-5214

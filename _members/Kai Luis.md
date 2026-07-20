@@ -2,7 +2,7 @@
 name: Kai Luis Jakob
 image: images/kai_luis.png
 role: phd
-group: alum
+
 links:
 
 ---
