@@ -1080,6 +1080,33 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1515/nanoph-2021-0785
+  title: 'Ultrafast carrier dynamics in terahertz photoconductors and photomixers:
+    beyond short-carrier-lifetime semiconductors'
+  authors:
+  - Lu
+  - "Ping\u2010Keng"
+  - Fernandez Olvera
+  - Anuar de Jesus
+  - Turan
+  - Deniz
+  - <b>Seifert
+  - Tom Sebastian</b>
+  - Yardimci
+  - Nezih Tolga
+  - Kampfrath
+  - Tobias
+  - Preu
+  - Sascha
+  - Jarrahi
+  - Mona
+  publisher: Nanophotonics (2022)
+  date: '2022-01-01'
+  link: https://doi.org/10.1515/nanoph-2021-0785
+  year: '2022'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1103/physrevb.105.184408
   title: Supplemental Material for Transition of laser-induced terahertz spin currents
     from torque-to conduction-electron-mediated transport
