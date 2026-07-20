@@ -20,17 +20,14 @@ layout: default
 
 {{ content }}
 
-{% assign lastname = page.title | split: " " | last %}
+{% assign lastname = page.name | split: " " | last %}
 
 {% capture search -%}
-  research/?search={{ lastname }}
+  papers/?search={{ lastname }}
 {%- endcapture %}
 <p class="center">
   <a href="{{ search | relative_url | uri_escape }}">
-    Search for {{ page.name | default: page.title }}'s papers on the Research page
+    Search for {{ page.name | default: page.title }}'s papers on the Papers page
   </a>
 </p>
 
-{% capture search -%}
-  blog/?search={{ page.name }}
-{%- endcapture %}

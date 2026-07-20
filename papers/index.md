@@ -239,13 +239,14 @@ function selectYear(year, fromBottom) {
   }
 }
 
-// Initialize: Click the first button (Newest Year) automatically on load
+// Initialize: expand all years if arriving with a search, else open newest year
 document.addEventListener('DOMContentLoaded', function() {
-  // Find the first button in the top navigation
-  var firstBtn = document.querySelector('.year-index-nav .year-btn');
-  if (firstBtn) {
-    var year = firstBtn.getAttribute('data-year');
-    selectYear(year, false);
+  if (new URLSearchParams(window.location.search).get('search')) {
+    var cards = document.getElementsByClassName('year-card');
+    for (var i = 0; i < cards.length; i++) cards[i].classList.add('active-year');
+  } else {
+    var firstBtn = document.querySelector('.year-index-nav .year-btn');
+    if (firstBtn) selectYear(firstBtn.getAttribute('data-year'), false);
   }
 });
 </script>
