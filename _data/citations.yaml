@@ -306,38 +306,97 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Terahertz%20switching%20of%20antiferromagnetic%20order%20by%20N%5C%27eel%20spin-orbit%20torques
-  title: Terahertz switching of antiferromagnetic order by N\'eel spin-orbit torques
+- id: arxiv:2512.23397
+  title: "Terahertz switching of antiferromagnetic order by N\xE9el spin-orbit torques"
   authors:
-  - Y Behovits
-  - AL Chekhov
-  - A Ruge
-  - R Rouzegar
-  - BR Serrano
-  - AP Fellows
-  - '...'
-  publisher: arXiv preprint arXiv:2512. (2025)
+  - Behovits
+  - Yannic
+  - Chekhov
+  - Alexander L.
+  - Ruge
+  - Amon
+  - Rouzegar
+  - Reza
+  - Serrano
+  - Bruno Rosinus
+  - Fellows
+  - Alexander P.
+  - John
+  - Ben
+  - "Th\xE4mer"
+  - Martin
+  - Reimers
+  - Sonka
+  - Renner
+  - Fynn
+  - Dannegger
+  - Tobias
+  - Nowak
+  - Ulrich
+  - <b>Seifert
+  - Tom S.</b>
+  - "Kl\xE4ui"
+  - Mathias
+  - Jourdan
+  - Martin
+  - Kampfrath
+  - Tobias
+  publisher: arXiv (2025)
   date: '2025-01-01'
-  link: https://google.com/search?q=Terahertz%20switching%20of%20antiferromagnetic%20order%20by%20N%5C%27eel%20spin-orbit%20torques
+  link: https://arxiv.org/abs/2512.23397
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Femtosecond%20photocurrents%20by%20the%20Dresselhaus%20bulk%20spin-galvanic%20effect%20in%20an%20inversion-asymmetric%20ferromagnet
+- id: arxiv:2507.00360
   title: Femtosecond photocurrents by the Dresselhaus bulk spin-galvanic effect in
     an inversion-asymmetric ferromagnet
   authors:
-  - J Tong
-  - Z Kaspar
-  - A Alostaz
-  - R Rouzegar
-  - C In
-  - T Titze
-  - M Staabs
-  - '...'
-  publisher: arXiv preprint arXiv:2507. (2025)
+  - Tong
+  - Junwei
+  - Kaspar
+  - Zdenek
+  - Alostaz
+  - Afnan
+  - Rouzegar
+  - Reza
+  - In
+  - Chihun
+  - Titze
+  - Tim
+  - Staabs
+  - Maximilian
+  - Bierhance
+  - Genaro
+  - Wu
+  - Yanzhao
+  - Grisk
+  - Holger
+  - Walowski
+  - Jakob
+  - "M\xFCnzenberg"
+  - Markus
+  - Gerhard
+  - Felicitas
+  - Kleinlein
+  - Johannes
+  - "Kie\xDFling"
+  - Tobias
+  - Gould
+  - Charles
+  - Molenkamp
+  - Laurens W.
+  - Zhang
+  - Xianmin
+  - Steil
+  - Daniel
+  - <b>Seifert
+  - Tom S.</b>
+  - Kampfrath
+  - Tobias
+  publisher: arXiv (2025)
   date: '2025-01-01'
-  link: https://google.com/search?q=Femtosecond%20photocurrents%20by%20the%20Dresselhaus%20bulk%20spin-galvanic%20effect%20in%20an%20inversion-asymmetric%20ferromagnet
+  link: https://arxiv.org/abs/2507.00360
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -406,18 +465,40 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Magnon-mediated%20terahertz%20spin%20transport%20in%20metallic%20Gd%7C%20Pt%20stacks
-  title: Magnon-mediated terahertz spin transport in metallic Gd| Pt stacks
+- id: arxiv:2503.22483
+  title: Magnon-mediated terahertz spin transport in metallic Gd|Pt stacks
   authors:
-  - O Gueckstock
-  - T Amrhein
-  - B Andres
-  - "P Jim\xE9nez-Cavero"
-  - C Gahl
-  - '...'
-  publisher: arXiv preprint arXiv:2503. (2025)
+  - Gueckstock
+  - Oliver
+  - Amrhein
+  - Tim
+  - Andres
+  - Beatrice
+  - "Jim\xE9nez-Cavero"
+  - Pilar
+  - Gahl
+  - Cornelius
+  - <b>Seifert
+  - Tom S.</b>
+  - Rouzegar
+  - Reza
+  - Radu
+  - Ilie
+  - Lucas
+  - Irene
+  - Wietstruk
+  - Marko
+  - "Morell\xF3n"
+  - Luis
+  - Weinelt
+  - Martin
+  - Kampfrath
+  - Tobias
+  - "Thielemann-K\xFChn"
+  - Nele
+  publisher: arXiv (2025)
   date: '2025-01-01'
-  link: https://google.com/search?q=Magnon-mediated%20terahertz%20spin%20transport%20in%20metallic%20Gd%7C%20Pt%20stacks
+  link: https://arxiv.org/abs/2503.22483
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1104,7 +1185,7 @@
   - Pietro
   - Stepanow
   - Sebastian
-  publisher: Nano Letters (2022)
+  publisher: American Chemical Society (2022)
   date: '2022-01-01'
   link: https://doi.org/10.1021/acs.nanolett.2c00980
   year: '2022'
@@ -1362,18 +1443,6 @@
   publisher: Conference on Lasers and Electro-Optics (2022)
   date: '2022-01-01'
   link: https://doi.org/10.1364/cleo_si.2022.ss2c.7
-  year: '2022'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1021/acs.nanolett.2c00980.s002
-  title: 'Supplementary information: Electron paramagnetic resonance of alkali metal
-    atoms and dimers on ultrathin MgO'
-  authors:
-  - ''
-  publisher: American Chemical Society (2022)
-  date: '2022-01-01'
-  link: https://doi.org/10.1021/acs.nanolett.2c00980.s002
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
