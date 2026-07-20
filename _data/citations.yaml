@@ -142,6 +142,37 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1126/sciadv.adz6549
+  title: Influence of atomic-scale defects on coherent phonon excitations by THz near
+    fields in an STM
+  authors:
+  - Rai
+  - Vibhuti N.
+  - Sim
+  - Junyoung
+  - Faaber
+  - Florian
+  - Bogdanoff
+  - Nils
+  - Trishin
+  - Sergey
+  - Wiechers
+  - Paul
+  - <b>Seifert
+  - Tom S.</b>
+  - Kampfrath
+  - Tobias
+  - Lotze
+  - Christian
+  - Franke
+  - Katharina J.
+  publisher: Science Advances (2025)
+  date: '2025-01-01'
+  link: https://doi.org/10.1126/sciadv.adz6549
+  year: '2025'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1103/mk8h-yzkj
   title: Hallmarks of Ballistic Terahertz Magnon Currents in an Antiferromagnetic
     Insulator
@@ -177,37 +208,6 @@
   publisher: Physical Review Letters (2025)
   date: '2025-01-01'
   link: https://doi.org/10.1103/mk8h-yzkj
-  year: '2025'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1126/sciadv.adz6549
-  title: Influence of atomic-scale defects on coherent phonon excitations by THz near
-    fields in an STM
-  authors:
-  - Rai
-  - Vibhuti N.
-  - Sim
-  - Junyoung
-  - Faaber
-  - Florian
-  - Bogdanoff
-  - Nils
-  - Trishin
-  - Sergey
-  - Wiechers
-  - Paul
-  - <b>Seifert
-  - Tom S.</b>
-  - Kampfrath
-  - Tobias
-  - Lotze
-  - Christian
-  - Franke
-  - Katharina J.
-  publisher: Science Advances (2025)
-  date: '2025-01-01'
-  link: https://doi.org/10.1126/sciadv.adz6549
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -375,6 +375,37 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1063/5.0214469
+  title: Rotating spintronic terahertz emitter optimized for microjoule pump-pulse
+    energies and megahertz repetition rates
+  authors:
+  - Vaitsi
+  - Alkisti
+  - Sleziona
+  - Vivien
+  - "Parra L\xF3pez"
+  - Luis E.
+  - Behovits
+  - Yannic
+  - Schulz
+  - Fabian
+  - "Mart\xEDn Saban\xE9s"
+  - Natalia
+  - Kampfrath
+  - Tobias
+  - Wolf
+  - Martin
+  - <b>Seifert
+  - Tom S.</b>
+  - "M\xFCller"
+  - Melanie
+  publisher: Applied Physics Letters (2024)
+  date: '2024-01-01'
+  link: https://doi.org/10.1063/5.0214469
+  year: '2024'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: url:https://google.com/search?q=Local%20and%20Global%20Reciprocity%20in%20Orbital-Charge-Coupled%20Transport
   title: Local and Global Reciprocity in Orbital-Charge-Coupled Transport
   authors:
@@ -423,51 +454,31 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1063/5.0214469
-  title: Rotating spintronic terahertz emitter optimized for microjoule pump-pulse
-    energies and megahertz repetition rates
-  authors:
-  - Vaitsi
-  - Alkisti
-  - Sleziona
-  - Vivien
-  - "Parra L\xF3pez"
-  - Luis E.
-  - Behovits
-  - Yannic
-  - Schulz
-  - Fabian
-  - "Mart\xEDn Saban\xE9s"
-  - Natalia
-  - Kampfrath
-  - Tobias
-  - Wolf
-  - Martin
-  - <b>Seifert
-  - Tom S.</b>
-  - "M\xFCller"
-  - Melanie
-  publisher: Applied Physics Letters (2024)
-  date: '2024-01-01'
-  link: https://doi.org/10.1063/5.0214469
-  year: '2024'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: url:https://google.com/search?q=Tunable%20ultrabroadband%20hybrid%20terahertz%20emitter%20combining%20a%20spintronic%20and%20a%20GaSe%20source
+- id: doi:10.1063/5.0226564
   title: Tunable ultrabroadband hybrid terahertz emitter combining a spintronic and
     a GaSe source
   authors:
-  - A Alostaz
-  - O Gueckstock
-  - J Tong
-  - J Kredl
-  - C In
-  - "M M\xFCnzenberg"
-  - '...'
+  - Alostaz
+  - Afnan
+  - Gueckstock
+  - Oliver
+  - Tong
+  - Junwei
+  - Kredl
+  - Jana
+  - In
+  - Chihun
+  - "M\xFCnzenberg"
+  - Markus
+  - Schneider
+  - Claus M.
+  - Kampfrath
+  - Tobias
+  - <b>Seifert
+  - Tom S.</b>
   publisher: Applied Physics Letters (2024)
   date: '2024-01-01'
-  link: https://google.com/search?q=Tunable%20ultrabroadband%20hybrid%20terahertz%20emitter%20combining%20a%20spintronic%20and%20a%20GaSe%20source
+  link: https://doi.org/10.1063/5.0226564
   year: '2024'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1041,6 +1052,33 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1515/nanoph-2021-0785
+  title: 'Ultrafast carrier dynamics in terahertz photoconductors and photomixers:
+    beyond short-carrier-lifetime semiconductors'
+  authors:
+  - Lu
+  - "Ping\u2010Keng"
+  - Fernandez Olvera
+  - Anuar de Jesus
+  - Turan
+  - Deniz
+  - <b>Seifert
+  - Tom Sebastian</b>
+  - Yardimci
+  - Nezih Tolga
+  - Kampfrath
+  - Tobias
+  - Preu
+  - Sascha
+  - Jarrahi
+  - Mona
+  publisher: Nanophotonics (2022)
+  date: '2022-01-01'
+  link: https://doi.org/10.1515/nanoph-2021-0785
+  year: '2022'
+  gsid: D0MpIxEAAAAJ
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1103/physrevb.105.184408
   title: Supplemental Material for Transition of laser-induced terahertz spin currents
     from torque-to conduction-electron-mediated transport
@@ -1090,36 +1128,9 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1515/nanoph-2021-0785
-  title: 'Ultrafast carrier dynamics in terahertz photoconductors and photomixers:
-    beyond short-carrier-lifetime semiconductors'
-  authors:
-  - Lu
-  - "Ping\u2010Keng"
-  - Fernandez Olvera
-  - Anuar de Jesus
-  - Turan
-  - Deniz
-  - <b>Seifert
-  - Tom Sebastian</b>
-  - Yardimci
-  - Nezih Tolga
-  - Kampfrath
-  - Tobias
-  - Preu
-  - Sascha
-  - Jarrahi
-  - Mona
-  publisher: Nanophotonics (2022)
-  date: '2022-01-01'
-  link: https://doi.org/10.1515/nanoph-2021-0785
-  year: '2022'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2208.00846
-  title: Terahertz spin-to-charge current conversion in stacks of ferromagnets and
-    the transition-metal dichalcogenide NbSe$_2$
+- id: doi:10.1002/admi.202201675
+  title: "Terahertz Spin\u2010to\u2010Charge Current Conversion in Stacks of Ferromagnets\
+    \ and the Transition\u2010Metal Dichalcogenide NbSe2"
   authors:
   - "N\xE1dvorn\xEDk"
   - "Luk\xE1\u0161"
@@ -1137,6 +1148,8 @@
   - Gisela
   - Takagi
   - Hidenori
+  - Zeer
+  - Mahmoud
   - <b>Seifert
   - Tom S.</b>
   - "Kuba\u0161\u010D\xEDk"
@@ -1147,7 +1160,7 @@
   - Abdelmadjid
   - Yang
   - Heejun
-  - Bedoya-Pinto
+  - "Bedoya\u2010Pinto"
   - Amilcar
   - Parkin
   - Stuart S. P.
@@ -1161,7 +1174,7 @@
   - Tobias
   publisher: Advanced Materials Interfaces (2022)
   date: '2022-01-01'
-  link: https://arxiv.org/abs/2208.00846
+  link: https://doi.org/10.1002/admi.202201675
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
