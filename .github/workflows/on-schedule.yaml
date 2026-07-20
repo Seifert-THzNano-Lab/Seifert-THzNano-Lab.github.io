@@ -20,4 +20,9 @@ jobs:
     uses: ./.github/workflows/update-citations.yaml
     secrets: inherit
     with:
-      open-pr: true
+      open-pr: false
+  build-site:
+    if: ${{ !failure() && !cancelled() }}
+    needs: update-citations
+    uses: ./.github/workflows/build-site.yaml
+    secrets: inherit
