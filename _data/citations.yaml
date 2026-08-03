@@ -283,20 +283,28 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Efficient%20terahertz%20spin-to-charge%20current%20conversion%20in%20IrAl%20compounds
+- id: doi:10.1063/5.0272921
   title: Efficient terahertz spin-to-charge current conversion in IrAl compounds
   authors:
-  - J Tong
-  - P Wang
-  - H Qiu
-  - TS Seifert
-  - I Kostanovski
-  - SSP Parkin
-  - T Kampfrath
-  - '...'
+  - Tong
+  - Junwei
+  - Wang
+  - Peng
+  - Qiu
+  - Hongsong
+  - <b>Seifert
+  - Tom S.</b>
+  - Kostanovski
+  - Ilya
+  - Parkin
+  - Stuart S. P.
+  - Kampfrath
+  - Tobias
+  - Gueckstock
+  - Oliver
   publisher: Applied Physics Letters (2025)
   date: '2025-01-01'
-  link: https://google.com/search?q=Efficient%20terahertz%20spin-to-charge%20current%20conversion%20in%20IrAl%20compounds
+  link: https://doi.org/10.1063/5.0272921
   year: '2025'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -463,31 +471,20 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1063/5.0226564
+- id: url:https://google.com/search?q=Tunable%20ultrabroadband%20hybrid%20terahertz%20emitter%20combining%20a%20spintronic%20and%20a%20GaSe%20source
   title: Tunable ultrabroadband hybrid terahertz emitter combining a spintronic and
     a GaSe source
   authors:
-  - Alostaz
-  - Afnan
-  - Gueckstock
-  - Oliver
-  - Tong
-  - Junwei
-  - Kredl
-  - Jana
-  - In
-  - Chihun
-  - "M\xFCnzenberg"
-  - Markus
-  - Schneider
-  - Claus M.
-  - Kampfrath
-  - Tobias
-  - <b>Seifert
-  - Tom S.</b>
+  - A Alostaz
+  - O Gueckstock
+  - J Tong
+  - J Kredl
+  - C In
+  - "M M\xFCnzenberg"
+  - '...'
   publisher: Applied Physics Letters (2024)
   date: '2024-01-01'
-  link: https://doi.org/10.1063/5.0226564
+  link: https://google.com/search?q=Tunable%20ultrabroadband%20hybrid%20terahertz%20emitter%20combining%20a%20spintronic%20and%20a%20GaSe%20source
   year: '2024'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -693,39 +690,19 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1038/s41467-023-41569-z
+- id: url:https://google.com/search?q=Terahertz%20N%C3%A9el%20spin-orbit%20torques%20drive%20nonlinear%20magnon%20dynamics%20in%20antiferromagnetic%20Mn2Au
   title: "Terahertz N\xE9el spin-orbit torques drive nonlinear magnon dynamics in\
     \ antiferromagnetic Mn2Au"
   authors:
-  - Behovits
-  - Y.
-  - Chekhov
-  - A. L.
-  - Bodnar
-  - S. Yu.
-  - Gueckstock
-  - O.
-  - Reimers
-  - S.
-  - Lytvynenko
-  - Y.
-  - Skourski
-  - Y.
-  - Wolf
-  - M.
-  - <b>Seifert
-  - T. S.</b>
-  - Gomonay
-  - O.
-  - "Kl\xE4ui"
-  - M.
-  - Jourdan
-  - M.
-  - Kampfrath
-  - T.
+  - Y Behovits
+  - AL Chekhov
+  - SY Bodnar
+  - O Gueckstock
+  - S Reimers
+  - '...'
   publisher: Nature Communications (2023)
   date: '2023-01-01'
-  link: https://doi.org/10.1038/s41467-023-41569-z
+  link: https://google.com/search?q=Terahertz%20N%C3%A9el%20spin-orbit%20torques%20drive%20nonlinear%20magnon%20dynamics%20in%20antiferromagnetic%20Mn2Au
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -815,7 +792,7 @@
   plugin: google-scholar.py
   file: google-scholar.yaml
 - id: doi:10.1109/irmmw-thz57677.2023.10298865
-  title: Shot-noise limited detection of terahertz transients from spintronic emitters
+  title: Shot-noise limited detection of terahertz transients form spintronic emitters
   authors:
   - Zagbayou
   - "B\xE9di"
@@ -867,37 +844,20 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/irmmw-thz57677.2023.10299070
+- id: url:https://google.com/search?q=Time-Domain%20Spectroscopy%20for%20Space%20Exploration%20at%20Terahertz%20energy%20scales
   title: Time-Domain Spectroscopy for Space Exploration at Terahertz energy scales
   authors:
-  - Ha
-  - Yookyung
-  - Woeste
-  - Jonas
-  - Gueckstock
-  - Oliver
-  - Kourkafas
-  - Georgios
-  - Petrovic
-  - Jovana
-  - Rabasovic
-  - Mihailo
-  - Krmpot
-  - Aleksandar
-  - <b>Seifert
-  - Tom S.</b>
-  - Denker
-  - Andrea
-  - Kampfrath
-  - Tobias
-  - Stojanovic
-  - Nikola
-  - Gensch
-  - Michael
-  publisher: 2023 48th International Conference on Infrared, Millimeter, and Terahertz
-    Waves (IRMMW-THz) (2023)
+  - Y Ha
+  - J Woeste
+  - O Gueckstock
+  - G Kourkafas
+  - J Petrovic
+  - M Rabasovic
+  - '...'
+  publisher: "2023 48th International Conference on Infrared, Millimeter, and Terahertz\
+    \ \u2026 (2023)"
   date: '2023-01-01'
-  link: https://doi.org/10.1109/irmmw-thz57677.2023.10299070
+  link: https://google.com/search?q=Time-Domain%20Spectroscopy%20for%20Space%20Exploration%20at%20Terahertz%20energy%20scales
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -916,22 +876,6 @@
     \ \u2026 (2023)"
   date: '2023-01-01'
   link: https://google.com/search?q=Spintronic%20Terahertz%20Emitter%20on%20a%20Fiber%20Tip
-  year: '2023'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: url:https://google.com/search?q=Shot-noise%20limited%20detection%20of%20terahertz%20transients%20form%20spintronic%20emitters
-  title: Shot-noise limited detection of terahertz transients form spintronic emitters
-  authors:
-  - B Zagbayou
-  - "\xC9 Doiron"
-  - F Sirois
-  - T <b>Seifert
-  - T</b> Kampfrath
-  - D Seletskiy
-  publisher: IEEE (2023)
-  date: '2023-01-01'
-  link: https://google.com/search?q=Shot-noise%20limited%20detection%20of%20terahertz%20transients%20form%20spintronic%20emitters
   year: '2023'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1009,14 +953,20 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1021/acs.nanolett.2c00980.s002
+- id: url:https://google.com/search?q=Electron%20paramagnetic%20resonance%20of%20alkali%20metal%20atoms%20and%20dimers%20on%20ultrathin%20MgO
   title: Electron paramagnetic resonance of alkali metal atoms and dimers on ultrathin
     MgO
   authors:
-  - ''
+  - S Kovarik
+  - R Robles
+  - R Schlitz
+  - TS Seifert
+  - N Lorente
+  - P Gambardella
+  - '...'
   publisher: Nano Letters (2022)
   date: '2022-01-01'
-  link: https://doi.org/10.1021/acs.nanolett.2c00980.s002
+  link: https://google.com/search?q=Electron%20paramagnetic%20resonance%20of%20alkali%20metal%20atoms%20and%20dimers%20on%20ultrathin%20MgO
   year: '2022'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1086,8 +1036,8 @@
   plugin: google-scholar.py
   file: google-scholar.yaml
 - id: doi:10.1103/physrevb.105.184408
-  title: Transition of laser-induced terahertz spin currents from torque-to conduction-electron-mediated
-    transport
+  title: Supplemental Material for Transition of laser-induced terahertz spin currents
+    from torque-to conduction-electron-mediated transport
   authors:
   - "Jim\xE9nez-Cavero"
   - Pilar
@@ -1357,23 +1307,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Supplemental%20Material%20for%20Transition%20of%20laser-induced%20terahertz%20spin%20currents%20from%20torque-to%20conduction-electron-mediated%20transport
-  title: Supplemental Material for Transition of laser-induced terahertz spin currents
-    from torque-to conduction-electron-mediated transport
-  authors:
-  - "P Jim\xE9nez-Cavero"
-  - O Gueckstock
-  - "L N\xE1dvorn\xEDk"
-  - I Lucas
-  - TS Seifert
-  - '...'
-  publisher: American Physical Society (2022)
-  date: '2022-01-01'
-  link: https://google.com/search?q=Supplemental%20Material%20for%20Transition%20of%20laser-induced%20terahertz%20spin%20currents%20from%20torque-to%20conduction-electron-mediated%20transport
-  year: '2022'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1002/adma.202006281
   title: Terahertz spin-to-charge conversion by interfacial skew scattering in magnetic
     metal bilayers
@@ -1512,23 +1445,6 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Single-atom%20electron%20paramagnetic%20resonance%20in%20a%20scanning%20tunneling%20microscope%20driven%20by%20a%20radiofrequency%20antenna%20at%204%20K
-  title: Single-atom electron paramagnetic resonance in a scanning tunneling microscope
-    driven by a radiofrequency antenna at 4 K
-  authors:
-  - S Kovarik
-  - TS Seifert
-  - D Juraschek
-  - NA Spaldin
-  - S Stepanow
-  - '...'
-  publisher: APS March Meeting (2021)
-  date: '2021-01-01'
-  link: https://google.com/search?q=Single-atom%20electron%20paramagnetic%20resonance%20in%20a%20scanning%20tunneling%20microscope%20driven%20by%20a%20radiofrequency%20antenna%20at%204%20K
-  year: '2021'
-  gsid: D0MpIxEAAAAJ
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: url:https://google.com/search?q=Terahertz%20spin-to-charge%20conversion%20by%20interfacial%20skew%20scattering%20in%20magnetic%20metal%20bilayers
   title: Terahertz spin-to-charge conversion by interfacial skew scattering in magnetic
     metal bilayers
@@ -1607,7 +1523,7 @@
   file: google-scholar.yaml
 - id: doi:10.1103/physrevresearch.2.013032
   title: Single-atom electron paramagnetic resonance in a scanning tunneling microscope
-    driven by a radio-frequency antenna at 4 K
+    driven by a radiofrequency antenna at 4 K
   authors:
   - <b>Seifert
   - T. S.</b>
@@ -1717,20 +1633,30 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: url:https://google.com/search?q=Impact%20of%20pump%20wavelength%20on%20terahertz%20emission%20of%20a%20cavity-enhanced%20spintronic%20trilayer
+- id: doi:10.1109/irmmw-thz.2019.8873865
   title: Impact of pump wavelength on terahertz emission of a cavity-enhanced spintronic
     trilayer
   authors:
-  - RI Herapath
-  - SM Hornett
-  - TS Seifert
-  - G Jakob
-  - "M Kl\xE4ui"
-  - J Bertolotti
-  - '...'
-  publisher: Applied Physics Letters (2019)
+  - Herapath
+  - R I.
+  - Hornett
+  - S M.
+  - <b>Seifert
+  - T</b>
+  - Jakob
+  - G
+  - Klaui
+  - M
+  - Bertolotti
+  - J
+  - Kampfrath
+  - T
+  - Hendry
+  - E
+  publisher: 2019 44th International Conference on Infrared, Millimeter, and Terahertz
+    Waves (IRMMW-THz) (2019)
   date: '2019-01-01'
-  link: https://google.com/search?q=Impact%20of%20pump%20wavelength%20on%20terahertz%20emission%20of%20a%20cavity-enhanced%20spintronic%20trilayer
+  link: https://doi.org/10.1109/irmmw-thz.2019.8873865
   year: '2019'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
@@ -1766,34 +1692,20 @@
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/irmmw-thz.2019.8874256
+- id: url:https://google.com/search?q=Effect%20of%20DC%20Electric%20Field%20on%20the%20Emitted%20THz%20Signal%20of%20Antenna-Coupled%20Spintronic%20Emitters
   title: Effect of DC Electric Field on the Emitted THz Signal of Antenna-Coupled
     Spintronic Emitters
   authors:
-  - Nandi
-  - U.
-  - Preu
-  - S.
-  - Abdelaziz
-  - M.S.
-  - Jaiswal
-  - S.
-  - Jakob
-  - G.
-  - Gueckstock
-  - O.
-  - S Rouzegar
-  - M. R.
-  - <b>Seifert
-  - T.S.</b>
-  - Klaui
-  - M.
-  - Kampfrath
-  - T.
-  publisher: 2019 44th International Conference on Infrared, Millimeter, and Terahertz
-    Waves (IRMMW-THz) (2019)
+  - U Nandi
+  - MS Abdelaziz
+  - S Jaiswal
+  - G Jakob
+  - O Gueckstock
+  - '...'
+  publisher: "2019 44th International Conference on Infrared, Millimeter, and Terahertz\
+    \ \u2026 (2019)"
   date: '2019-01-01'
-  link: https://doi.org/10.1109/irmmw-thz.2019.8874256
+  link: https://google.com/search?q=Effect%20of%20DC%20Electric%20Field%20on%20the%20Emitted%20THz%20Signal%20of%20Antenna-Coupled%20Spintronic%20Emitters
   year: '2019'
   gsid: D0MpIxEAAAAJ
   plugin: google-scholar.py
