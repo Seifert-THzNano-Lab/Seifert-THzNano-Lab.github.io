@@ -89,15 +89,13 @@ Our three focus areas describe promising ongoing projects that we plan to furthe
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  overflow: hidden;
 }
 
 .lab-card-image img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain; /* Ensures the whole plot fits */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Renders fill the image area edge to edge */
 }
 
 /* 4. Text Section */
