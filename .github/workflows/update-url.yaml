@@ -25,10 +25,10 @@ jobs:
 
       - name: Get Pages url
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
 
       - name: Checkout branch contents
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: SSH debug
         if: runner.debug == '1'
@@ -36,7 +36,7 @@ jobs:
 
       # update link to site in readme
       - name: Update readme
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const { readFileSync, writeFileSync } = require("fs");
@@ -55,14 +55,14 @@ jobs:
 
       - name: Check if readme changed
         id: changed
-        uses: tj-actions/verify-changed-files@v18
+        uses: tj-actions/verify-changed-files@v20
         with:
           files: |
             README.md
 
       - name: Commit changed files
         if: steps.changed.outputs.files_changed == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update url"
 
