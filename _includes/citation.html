@@ -57,7 +57,13 @@
         <span class="citation-id">
           {% if citation.link %}
             <a href="{{ citation.link }}" target="_blank" rel="noopener noreferrer" style="color: #737373; text-decoration: none; font-size: 0.9em;">
-              {{- citation.id | default: "[Link]" -}}
+              {%- if citation.link_label -%}
+                {{- citation.link_label -}}
+              {%- elsif citation.id contains "url:" -%}
+                {{- citation.link | split: "/" | slice: 2 | first | remove_first: "www." | default: "Link" -}}
+              {%- else -%}
+                {{- citation.id | default: "Link" -}}
+              {%- endif -%}
             </a>
           {% else %}
             {{- citation.id | default: "[no id info]" -}}

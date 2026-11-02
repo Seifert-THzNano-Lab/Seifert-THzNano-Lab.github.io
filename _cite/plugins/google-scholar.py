@@ -1,13 +1,81 @@
 import os
 import re
 import requests
+import time
 import xml.etree.ElementTree as ET
+from urllib.parse import urlparse
 from difflib import SequenceMatcher
 from serpapi import GoogleSearch
 from util import *
 
+# identify ourselves to Crossref/arXiv; Crossref routes requests with a contact
+# address to its more reliable "polite" pool (anonymous requests often time out)
+# (set the CITE_CONTACT_EMAIL env var / repo variable to opt in)
+CONTACT = os.environ.get("CITE_CONTACT_EMAIL", "").strip()
+HEADERS = {"User-Agent": "lab-website-cite/1.0" + (f" (mailto:{CONTACT})" if CONTACT else "")}
+
+# optional manual fixes for individual papers, keyed by title (see file header)
+OVERRIDES_FILE = "_data/citation-overrides.yaml"
+
+
+def normalize_title(text):
+    """
+    Lowercase and strip markup/punctuation so titles from Google Scholar,
+    Crossref and arXiv compare fairly (e.g. "<i>Ab</i> initio", "N\\'eel").
+    """
+    if not text: return ""
+    text = re.sub(r"<[^>]+>", " ", str(text))
+    text = re.sub(r"\\[a-zA-Z]+|\\.", "", text)
+    text = re.sub(r"[^a-z0-9]+", " ", text.lower())
+    return text.strip()
+
+
 def similarity(a, b):
-    return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+    return SequenceMatcher(None, normalize_title(a), normalize_title(b)).ratio()
+
+
+def http_get(url, params=None, timeout=20, tries=3):
+    """
+    GET with a contact header and a few retries on timeouts / rate limits.
+    Returns the response, or None if every attempt failed.
+    """
+    for attempt in range(tries):
+        try:
+            response = requests.get(url, params=params, headers=HEADERS, timeout=timeout)
+            if response.status_code == 200:
+                return response
+            if response.status_code not in (429, 500, 502, 503, 504):
+                return None
+        except requests.RequestException:
+            pass
+        time.sleep(2 * (attempt + 1))
+    return None
+
+
+def load_overrides():
+    """
+    Load manual per-paper fixes. Returns {normalized title: override dict}.
+    """
+    try:
+        data = load_data(OVERRIDES_FILE)
+    except Exception:
+        return {}
+    overrides = {}
+    for item in data if list_of_dicts(data) else []:
+        title = normalize_title(item.get("title", ""))
+        if title:
+            overrides[title] = item
+    return overrides
+
+
+def short_link_label(url):
+    """
+    Short human-readable label for a plain URL, e.g. "pubs.rsc.org".
+    """
+    host = urlparse(url).netloc.lower()
+    if host.startswith("www."): host = host[4:]
+    if "scholar.google" in host: return "Google Scholar"
+    return host or "Link"
 
 def clean_journal(text):
     """
@@ -49,13 +117,14 @@ def search_arxiv_by_title(title):
     clean_query = re.sub(r'[^a-zA-Z0-9\s]', '', title)
     
     try:
-        url = f'http://export.arxiv.org/api/query?search_query=all:{requests.utils.quote(clean_query)}&max_results=1'
-        response = requests.get(url, timeout=5)
+        url = f'https://export.arxiv.org/api/query?search_query=all:{requests.utils.quote(clean_query)}&max_results=1'
+        response = http_get(url)
+        if response is None: return None
         root = ET.fromstring(response.content)
         ns = {'atom': 'http://www.w3.org/2005/Atom', 'arxiv': 'http://arxiv.org/schemas/atom'}
         
         entry = root.find('atom:entry', ns)
-        if entry:
+        if entry is not None:
             found_title = entry.find('atom:title', ns).text.strip()
             found_title = re.sub(r'\s+', ' ', found_title)
             
@@ -87,43 +156,67 @@ def search_arxiv_by_title(title):
         pass
     return None
 
-def find_doi_strict(title):
+def find_doi_strict(title, allow_preprint=True):
+    """
+    Look a title up on Crossref and return (doi, authors, journal, year) for the
+    best-matching record, or None. Checks the top few hits rather than only the
+    first, since conference abstracts/errata often outrank the actual paper.
+    With allow_preprint=False, arXiv DOIs and other preprints are skipped.
+    """
+    if not title or len(title) < 5: return None
+    response = http_get(
+        "https://api.crossref.org/works",
+        params={
+            "query.bibliographic": title,
+            "rows": 5,
+            "select": "DOI,title,subtitle,container-title,author,published-print,published-online,created,type",
+            **({"mailto": CONTACT} if CONTACT else {}),
+        },
+    )
+    if response is None: return None
     try:
-        url = f"https://api.crossref.org/works?query.bibliographic={requests.utils.quote(title)}&rows=1"
-        response = requests.get(url, timeout=5)
-        data = response.json()
-        items = data.get('message', {}).get('items', [])
-        
-        if items:
-            item = items[0]
-            found_title = item.get('title', [''])[0]
-            if similarity(title, found_title) < 0.85:
-                return None
-            
-            doi = item.get('DOI')
-            journal = item.get('container-title', [''])[0]
-            
-            authors = []
-            for a in item.get('author', []):
-                family = a.get('family', '')
-                given = a.get('given', '')
-                if family and given:
-                    authors.append(f"{family}, {given}")
-                elif family:
-                    authors.append(family)
-            
-            year = ""
-            if 'published-print' in item:
-                year = str(item['published-print']['date-parts'][0][0])
-            elif 'published-online' in item:
-                year = str(item['published-online']['date-parts'][0][0])
-            elif 'created' in item:
-                year = str(item['created']['date-parts'][0][0])
+        items = response.json().get("message", {}).get("items", [])
+    except ValueError:
+        return None
 
-            return doi, ", ".join(authors), journal, year
-    except:
-        pass
-    return None
+    best, best_score = None, 0
+    for item in items:
+        doi = item.get("DOI", "")
+        if not allow_preprint and (
+            item.get("type") == "posted-content" or doi.lower().startswith("10.48550/")
+        ):
+            continue
+        found = (item.get("title") or [""])[0]
+        subtitle = (item.get("subtitle") or [""])[0]
+        score = max(similarity(title, found), similarity(title, f"{found}: {subtitle}"))
+        if score > best_score:
+            best, best_score = item, score
+
+    if not best or best_score < 0.85:
+        return None
+
+    doi = best.get("DOI")
+    journal = (best.get("container-title") or [""])[0]
+
+    authors = []
+    for a in best.get("author", []):
+        family = a.get("family", "")
+        given = a.get("given", "")
+        if family and given:
+            authors.append(f"{family}, {given}")
+        elif family:
+            authors.append(family)
+
+    year = ""
+    for key in ("published-print", "published-online", "created"):
+        try:
+            year = str(best[key]["date-parts"][0][0])
+            break
+        except (KeyError, IndexError, TypeError):
+            continue
+
+    return doi, ", ".join(authors), journal, year
+
 
 def main(entry):
     api_key = os.environ.get("GOOGLE_SCHOLAR_API_KEY", "")
@@ -140,6 +233,7 @@ def main(entry):
         return get_safe(GoogleSearch(params).get_dict(), "articles", [])
 
     response = query(_id)
+    overrides = load_overrides()
 
     sources = []
 
@@ -185,6 +279,16 @@ def main(entry):
                     final_pub = ax_journal
                 # Else: Keep the Google Scholar journal we already had (don't overwrite with 'arXiv')
             else:
+                # arXiv often lags behind publication: ask Crossref for the
+                # journal DOI before falling back to the preprint
+                journal_doi = find_doi_strict(ax_title, allow_preprint=False)
+                if journal_doi:
+                    ax_doi = journal_doi[0]
+                    cite_id = f"doi:{ax_doi}"
+                    final_link = f"https://doi.org/{ax_doi}"
+                    if is_valid_journal(journal_doi[2]):
+                        final_pub = journal_doi[2]
+            if not ax_doi:
                 # No DOI yet (Preprint status)
                 cite_id = f"arxiv:{ax_id}"
                 final_link = f"https://arxiv.org/abs/{ax_id}"
@@ -211,15 +315,37 @@ def main(entry):
                 if cr_year and len(cr_year) == 4: final_year = cr_year
 
         # --- C. Fallback Link ---
+        # No DOI/arXiv id found. Leave the id empty (Manubot can't cite a bare
+        # web page anyway) and show a short label instead of the full URL.
+        link_label = ""
         if not cite_id:
             gs_link = get_safe(work, "link", "")
             if gs_link and "scholar.google" not in gs_link and gs_link.startswith("http"):
-                 cite_id = f"url:{gs_link}"
-                 final_link = gs_link
+                final_link = gs_link
             else:
-                 safe_search = f"https://google.com/search?q={requests.utils.quote(gs_title)}"
-                 cite_id = f"url:{safe_search}"
-                 final_link = safe_search
+                final_link = "https://scholar.google.com/scholar?q=" + requests.utils.quote(f'"{gs_title}"')
+            link_label = short_link_label(final_link)
+
+        # --- D. Manual overrides (_data/citation-overrides.yaml) ---
+        override = overrides.get(normalize_title(gs_title)) or overrides.get(normalize_title(final_title))
+        if override:
+            if override.get("remove"):
+                continue
+            if override.get("doi"):
+                doi = str(override["doi"]).strip()
+                doi = re.sub(r"^(https?://(dx\.)?doi\.org/|doi:)", "", doi, flags=re.IGNORECASE)
+                cite_id = f"doi:{doi}"
+                final_link = f"https://doi.org/{doi}"
+                link_label = ""
+            elif override.get("link"):
+                cite_id = None
+                final_link = str(override["link"]).strip()
+                link_label = override.get("label") or short_link_label(final_link)
+            for key in ("title", "publisher", "year"):
+                if override.get(key):
+                    if key == "title": final_title = override[key]
+                    if key == "publisher": final_pub = override[key]
+                    if key == "year": final_year = str(override[key])
 
         # --- 4. FORMATTING ---
         clean_pub_str = clean_journal(final_pub)
@@ -237,7 +363,7 @@ def main(entry):
         sortable_date = f"{final_year}-01-01" if final_year else ""
 
         source = {
-            "id": cite_id,
+            "id": cite_id or "",
             "title": final_title,
             "authors": author_list,
             "publisher": clean_pub_str,
@@ -245,6 +371,8 @@ def main(entry):
             "year": final_year,
             "link": final_link,
         }
+        if link_label:
+            source["link_label"] = link_label
         source.update(entry)
         sources.append(source)
 

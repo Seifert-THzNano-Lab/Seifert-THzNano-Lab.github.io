@@ -1,0 +1,24 @@
+# Manual fixes for publications pulled from Google Scholar.
+#
+# The _cite/ script (run by the update-citations workflow) looks up a DOI for
+# every Google Scholar entry via arXiv and Crossref. When that lookup fails or
+# picks the wrong record, add an entry here instead of editing citations.yaml
+# (which is regenerated automatically and would lose hand edits).
+#
+# Entries are matched by title (case, punctuation and markup are ignored).
+# Supported keys:
+#   title:     title as shown on Google Scholar (required, used for matching)
+#   doi:       DOI to use, e.g. 10.1038/s41566-023-01234-5
+#   link:      plain link to use when there is no DOI
+#   label:     short text shown for that link (default: the site's domain)
+#   publisher: journal name to display
+#   year:      publication year
+#   remove:    true to hide the entry entirely
+#
+# Examples:
+#
+# - title: Ultrafast terahertz magnetometry
+#   doi: 10.1038/s41467-020-xxxxx-x
+#
+# - title: Journal Name RSCPublishing
+#   remove: true
