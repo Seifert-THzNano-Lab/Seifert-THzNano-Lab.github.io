@@ -17,7 +17,9 @@ permissions:
 
 jobs:
   build-site:
-    runs-on: ubuntu-latest
+    # stay on ubuntu 24.04 for now: on ubuntu 26.04 (the new ubuntu-latest)
+    # the old native gems in Gemfile.lock fail to compile
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Debug dump
